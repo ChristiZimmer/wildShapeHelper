@@ -1,0 +1,31 @@
+{
+    "name": "Bat",
+    "cr": 0,
+    "size": "tiny",
+    "habitat": "deserts,caves",
+    "goodFor": "flying,darkness",
+    "hp": "1 (1d4-1)",
+    "ac": 12,
+    "walkingSpeed": 5,
+    "flyingSpeed": 30,
+    "strength": 2,
+    "dexterity": 15,
+    "constitution": 8,
+    "intelligence": 2,
+    "wisdom": 12,
+    "charisma": 4,
+    "senses": "Blindsight 60 Ft., passive Perception 11",
+    "specialAbilities": {
+        "Echolocation": "The bat can't use its blindsight while deafened.",
+        "Keen Hearing": "The bat has advantage on Wisdom (Perception) checks that rely on hearing."
+    },
+    "actions": {
+        "Bite" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one",
+            "toHit": "+0",
+            "onHit": "(1d1) piercing damage"
+        }
+    }
+}

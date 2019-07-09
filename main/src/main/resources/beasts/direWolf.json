@@ -1,0 +1,31 @@
+{
+    "name": "Dire Wolf",
+    "cr": 1,
+    "size": "large",
+    "habitat": "forest",
+    "goodFor": "combat,speed,stealth",
+    "hp": "37 (5d10+10)",
+    "ac": 14,
+    "walkingSpeed": 50,
+    "strength": 17,
+    "dexterity": 15,
+    "constitution": 15,
+    "intelligence": 3,
+    "wisdom": 12,
+    "charisma": 7,
+    "skills": "Perception +3, Stealth +4",
+    "senses": "passive Perception 13",
+    "specialAbilities": {
+        "Keen Hearing and Smell": "The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell.",
+        "Pack Tactics": "The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 ft. of the creature and the ally isn't incapacitated."
+    },
+    "actions": {
+        "Bite" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one",
+            "toHit": "+5",
+            "onHit": "(2d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone"
+        }
+    }
+}

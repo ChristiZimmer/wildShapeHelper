@@ -1,0 +1,31 @@
+{
+    "name": "Cat",
+    "cr": 0,
+    "size": "tiny",
+    "habitat": "plains,urban",
+    "goodFor": "climbing,stealth",
+    "hp": "2 (1d4)",
+    "ac": 12,
+    "walkingSpeed": 40,
+    "climbingSpeed": 30,
+    "strength": 3,
+    "dexterity": 15,
+    "constitution": 10,
+    "intelligence": 3,
+    "wisdom": 12,
+    "charisma": 7,
+    "skills": "Perception +3, Stealth +4",
+    "senses": "passive Perception 13",
+    "specialAbilities": {
+        "Keen Smell": "The cat has advantage on Wisdom (Perception) checks that rely on smell"
+    },
+    "actions": {
+        "Claws" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one",
+            "toHit": "+0",
+            "onHit": "(1d1) slashing damage"
+        }
+    }
+}

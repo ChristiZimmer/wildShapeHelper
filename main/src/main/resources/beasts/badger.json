@@ -1,0 +1,30 @@
+{
+    "name": "Badger",
+    "cr": 0,
+    "size": "tiny",
+    "habitat": "forest,hill,plains,underground",
+    "goodFor": "digging,darkness",
+    "hp": "3 (1d4+1)",
+    "ac": 10,
+    "walkingSpeed": 20,
+    "burrow": 5,
+    "strength": 4,
+    "dexterity": 11,
+    "constitution": 12,
+    "intelligence": 2,
+    "wisdom": 12,
+    "charisma": 5,
+    "senses": "Darkvision 30 Ft., passive Perception 11",
+    "specialAbilities": {
+        "Keen Smell": "The badger has advantage on Wisdom (Perception) checks that rely on smell."
+    },
+    "actions": {
+        "Bite" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one",
+            "toHit": "+2",
+            "onHit": "(1d1) piercing damage"
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "name": "Brown Bear",
+    "cr": 1,
+    "size": "large",
+    "habitat": "forest,hill,mountains,underground",
+    "goodFor": "combat,climbing,transport",
+    "hp": "34 (4d10+12)",
+    "ac": 11,
+    "walkingSpeed": 40,
+    "climbingSpeed": 30,
+    "strength": 19,
+    "dexterity": 10,
+    "constitution": 16,
+    "intelligence": 2,
+    "wisdom": 13,
+    "charisma": 7,
+    "skills": "Perception +3",
+    "senses": "passive Perception 13",
+    "specialAbilities": {
+        "Keen Smell": "The bear has advantage on Wisdom (Perception) checks that rely on smell."
+    },
+    "actions": {
+        "Multiattack": {
+            "desc": "The bear makes two attacks: one with its bite and one with its claws."
+        },
+        "Bite" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one",
+            "toHit": "+5",
+            "onHit": "(1d8 + 4) piercing damage"
+        },
+        "Claws" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one",
+            "toHit": "+5",
+            "onHit": "(2d6 + 4) slashing damage"
+        }
+    }
+}

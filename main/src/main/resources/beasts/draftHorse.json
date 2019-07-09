@@ -1,0 +1,26 @@
+{
+    "name": "Draft Horse",
+    "cr": 0.25,
+    "size": "large",
+    "habitat": "any",
+    "goodFor": "transport",
+    "hp": "19 (3d10+3)",
+    "ac": 10,
+    "walkingSpeed": 40,
+    "strength": 18,
+    "dexterity": 10,
+    "constitution": 12,
+    "intelligence": 2,
+    "wisdom": 11,
+    "charisma": 7,
+    "senses": "passive Perception 10",
+    "actions": {
+        "Hooves" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one",
+            "toHit": "+6",
+            "onHit": "(2d4 + 4) bludgeoning damage"
+        }
+    }
+}

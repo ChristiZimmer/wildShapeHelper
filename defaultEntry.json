@@ -1,0 +1,47 @@
+{
+    "name": "name",
+    "cr": 1,
+    "size": "small",
+    "habitat": "forest,mountain",
+    "goodFor": "combat,climbing",
+    "hp": "19 (3d8+6)",
+    "ac": 12,
+    "walkingSpeed": 30,
+    "swimmingSpeed": 0,
+    "flyingSpeed": 0,
+    "climbingSpeed": 30,
+    "burrow": 5,
+    "strength": 14,
+    "dexterity": 13,
+    "constitution": 10,
+    "intelligence": 8,
+    "wisdom": 12,
+    "charisma": 7,
+    "skills": "Athletics +5, Perception +3",
+    "senses": "passive Perception 13",
+    "damageImmunities": "Poison",
+    "conditionImmunities": "Poisoned",
+    "specialAbilities": {
+        "Amphibious": "Can breathe air and water",
+        "Sense Magic": "Senses magic within 120 feet of it at will. This trait otherwise works like the detect magic spell but isn't itself magical."
+    },
+    "actions": {
+        "Multiattack": {
+            "desc": "Two fist attacks"
+        },
+        "Fist" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one",
+            "toHit": "+5",
+            "onHit": "(1d6 + 3) bludgeoning damage"
+        },
+        "Rock" : {
+            "type": "ranged",
+            "reach": "25/50 ft",
+            "target": "one",
+            "toHit": "+5",
+            "onHit": "(1d6 + 3) bludgeoning damage"
+        }
+    }
+}

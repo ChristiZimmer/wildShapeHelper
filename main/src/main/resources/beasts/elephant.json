@@ -1,0 +1,36 @@
+{
+    "name": "Elephant",
+    "cr": 4,
+    "size": "huge",
+    "habitat": "forest,plains",
+    "goodFor": "combat,transport",
+    "hp": "76 (8d12+24)",
+    "ac": 12,
+    "walkingSpeed": 40,
+    "strength": 22,
+    "dexterity": 9,
+    "constitution": 17,
+    "intelligence": 3,
+    "wisdom": 11,
+    "charisma": 6,
+    "senses": "passive Perception 10",
+    "specialAbilities": {
+        "Trampling Charge": "If the elephant moves at least 20 ft. straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 12 Strength saving throw or be knocked prone. If the target is prone, the elephant can make one stomp attack against it as a bonus action."
+    },
+    "actions": {
+        "Gore" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one",
+            "toHit": "+8",
+            "onHit": "(3d8 + 6) piercing damage"
+        },
+        "Fist" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one prone creature",
+            "toHit": "+8",
+            "onHit": "(3d10 + 6) bludgeoning damage"
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "name": "Crab",
+    "cr": 1,
+    "size": "tiny",
+    "habitat": "aquatic,coastal",
+    "goodFor": "stealth,darkness",
+    "hp": "2 (1d4)",
+    "ac": 11,
+    "walkingSpeed": 20,
+    "swimmingSpeed": 20,
+    "strength": 2,
+    "dexterity": 11,
+    "constitution": 10,
+    "intelligence": 1,
+    "wisdom": 8,
+    "charisma": 2,
+    "skills": "Stealth +2",
+    "senses": "Blindsight 30 Ft., passive Perception 9",
+    "specialAbilities": {
+        "Amphibious": "The crab can breathe air and water."
+    },
+    "actions": {
+        "Claw": {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one",
+            "toHit": "+0",
+            "onHit": "(1d1) bludgeoning damag"
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "name": "Ape",
+    "cr": 0.5,
+    "size": "medium",
+    "habitat": "forest,mountain",
+    "goodFor": "combat,climbing",
+    "hp": "19 (3d8+6)",
+    "ac": 12,
+    "walkingSpeed": 30,
+    "climbingSpeed": 30,
+    "strength": 16,
+    "dexterity": 12,
+    "constitution": 14,
+    "intelligence": 6,
+    "wisdom": 12,
+    "charisma": 7,
+    "skills": "Athletics +5, Perception +3",
+    "senses": "passive Perception 13",
+    "actions": {
+        "Multiattack": {
+            "desc": "The ape makes two fist attacks."
+        },
+        "Fist" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one",
+            "toHit": "+5",
+            "onHit": "(1d6 + 3) bludgeoning damage"
+        },
+        "Rock" : {
+            "type": "ranged",
+            "reach": "25/50 ft",
+            "target": "one",
+            "toHit": "+5",
+            "onHit": "(1d6 + 3) bludgeoning damage"
+        }
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "name": "Black Bear",
+    "cr": 0.5,
+    "size": "medium",
+    "habitat": "forest,hill,mountain",
+    "goodFor": "combat,climbing",
+    "hp": "19 (3d8+6)",
+    "ac": 11,
+    "walkingSpeed": 40,
+    "climbingSpeed": 30,
+    "strength": 15,
+    "dexterity": 10,
+    "constitution": 14,
+    "intelligence": 2,
+    "wisdom": 12,
+    "charisma": 7,
+    "senses": "passive Perception 13",
+    "specialAbilities": {
+        "Keen Smell": "The bear has advantage on Wisdom (Perception) checks that rely on smell."
+    },
+    "actions": {
+        "Multiattack": {
+            "desc": "The bear makes two attacks: one with its bite and one with its claws."
+        },
+        "Bite" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one",
+            "toHit": "+3",
+            "onHit": "(1d6 + 2) piercing damage"
+        },
+        "Claws" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one",
+            "toHit": "+3",
+            "onHit": "(2d4 + 2) slashing damage"
+        }
+    }
+}

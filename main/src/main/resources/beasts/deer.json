@@ -1,0 +1,26 @@
+{
+    "name": "Deer",
+    "cr": 0,
+    "size": "medium",
+    "habitat": "forest,plains,hill",
+    "goodFor": "combat,climbing",
+    "hp": "4 (1d8)",
+    "ac": 13,
+    "walkingSpeed": 50,
+    "strength": 11,
+    "dexterity": 16,
+    "constitution": 11,
+    "intelligence": 2,
+    "wisdom": 14,
+    "charisma": 5,
+    "senses": "passive Perception 12",
+    "actions": {
+        "Bite" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one",
+            "toHit": "+2",
+            "onHit": "(1d4) piercing damage"
+        }
+    }
+}

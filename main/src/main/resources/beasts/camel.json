@@ -1,0 +1,26 @@
+{
+    "name": "Camel",
+    "cr": 0.125,
+    "size": "large",
+    "habitat": "desert,hill,mountains",
+    "goodFor": "speed",
+    "hp": "15 (2d10+4)",
+    "ac": 9,
+    "walkingSpeed": 50,
+    "strength": 16,
+    "dexterity": 8,
+    "constitution": 14,
+    "intelligence": 2,
+    "wisdom": 8,
+    "charisma": 5,
+    "senses": "passive Perception 9",
+    "actions": {
+        "Bite" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one",
+            "toHit": "+5",
+            "onHit": "(1d4) bludgeoning damage"
+        }
+    }
+}

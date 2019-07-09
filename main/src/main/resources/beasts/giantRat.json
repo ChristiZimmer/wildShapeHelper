@@ -1,0 +1,30 @@
+{
+    "name": "Giant Rat",
+    "cr": 0.125,
+    "size": "small",
+    "habitat": "any",
+    "goodFor": "darkness",
+    "hp": "7 (2d6)",
+    "ac": 12,
+    "walkingSpeed": 30,
+    "strength": 7,
+    "dexterity": 15,
+    "constitution": 11,
+    "intelligence": 2,
+    "wisdom": 10,
+    "charisma": 4,
+    "senses": "Darkvision 60 ft., passive Perception 10",
+    "specialAbilities": {
+        "Keen Smell": "The rat has advantage on Wisdom (Perception) checks that rely on smell.",
+        "Pack Tactics": "The rat has advantage on an attack roll against a creature if at least one of the rat’s allies is within 5 feet of the creature and the ally isn’t incapacitated."
+    },
+    "actions": {
+        "Bite" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one",
+            "toHit": "+4",
+            "onHit": "(1d4 + 2) piercing damage"
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "name": "Flying Snake",
+    "cr": 0.125,
+    "size": "tiny",
+    "habitat": "desert,forest,plains,urban",
+    "goodFor": "combat,darkness,flying",
+    "hp": "5 (2d4)",
+    "ac": 12,
+    "walkingSpeed": 30,
+    "swimmingSpeed": 30,
+    "flyingSpeed": 60,
+    "strength": 4,
+    "dexterity": 18,
+    "constitution": 11,
+    "intelligence": 2,
+    "wisdom": 12,
+    "charisma": 5,
+    "senses": "Blindsight 10 Ft., passive Perception 11",
+    "specialAbilities": {
+        "Flyby": "The snake doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+    },
+    "actions": {
+        "Bite" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one",
+            "toHit": "+6",
+            "onHit": "(1d1) piercing damage plus (3d4)poison damage"
+        }
+    }
+}

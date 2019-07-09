@@ -1,0 +1,26 @@
+{
+    "name": "Axe Beak",
+    "cr": 0.25,
+    "size": "large",
+    "habitat": "desert,plains",
+    "goodFor": "speed",
+    "hp": "19 (3d10+3)",
+    "ac": 11,
+    "walkingSpeed": 50,
+    "strength": 14,
+    "dexterity": 12,
+    "constitution": 12,
+    "intelligence": 2,
+    "wisdom": 10,
+    "charisma": 5,
+    "senses": "passive Perception 10",
+    "actions": {
+        "Beak" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one",
+            "toHit": "+4",
+            "onHit": "(1d8 + 2) slashing damage"
+        }
+    }
+}

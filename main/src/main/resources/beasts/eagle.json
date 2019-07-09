@@ -1,0 +1,31 @@
+{
+    "name": "Eagle",
+    "cr": 0,
+    "size": "small",
+    "habitat": "forest,hill,plains,mountains",
+    "goodFor": "flying,speed",
+    "hp": "3 (1d6)",
+    "ac": 12,
+    "walkingSpeed": 10,
+    "flyingSpeed": 60,
+    "strength": 6,
+    "dexterity": 15,
+    "constitution": 10,
+    "intelligence": 2,
+    "wisdom": 14,
+    "charisma": 7,
+    "skills": "Perception +4",
+    "senses": "passive Perception 14",
+    "specialAbilities": {
+        "Keen Sight": "The eagle has advantage on Wisdom (Perception) checks that rely on sight."
+    },
+    "actions": {
+        "Talons" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one",
+            "toHit": "+4",
+            "onHit": "(1d4 + 2) slashing damage"
+        }
+    }
+}

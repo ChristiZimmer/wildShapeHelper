@@ -1,0 +1,34 @@
+{
+    "name": "Constrictor Snake",
+    "cr": 0.25,
+    "size": "large",
+    "habitat": "forest,aquatic",
+    "goodFor": "combat,swimming,darkness",
+    "hp": "13 (2d10+2)",
+    "ac": 12,
+    "walkingSpeed": 30,
+    "swimmingSpeed": 30,
+    "strength": 15,
+    "dexterity": 14,
+    "constitution": 12,
+    "intelligence": 1,
+    "wisdom": 10,
+    "charisma": 3,
+    "senses": "Blindsight 10 Ft., passive Perception 10",
+    "actions": {
+        "Bite" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one",
+            "toHit": "+4",
+            "onHit": " (1d6 + 2) piercing damage"
+        },
+        "Constrict" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one",
+            "toHit": "+4",
+            "onHit": "(1d8 + 2) bludgeoning damage. The target is grappled (escape dc 14) Until this grapple ends, the creature is restrained, and the snake can't constrict another target"
+        }
+    }
+}
