@@ -6,15 +6,15 @@ Habitat descriptions used are from https://www.dandwiki.com/wiki/SRD:Creatures_b
 
 For example of beast file layout to add more or modify existing, please see defaultEntry.json.
 The following fields are required, all others may be omitted:
-    * name
-    * cr
-    * size
-    * hp
-    * ac
-    * strength
-    * dexterity
-    * constitution
-    * intelligence
-    * wisdom
-    * charisma
-    * actions
+* name
+* cr
+* size
+* hp
+* ac
+* strength
+* dexterity
+* constitution
+* intelligence
+* wisdom
+* charisma
+* actions
