@@ -1,0 +1,26 @@
+{
+    "name": "Pony",
+    "cr": 0.125,
+    "size": "medium",
+    "habitat": "plains,urban",
+    "goodFor": "transport",
+    "hp": "11 (2d8+2)",
+    "ac": 10,
+    "walkingSpeed": 40,
+    "strength": 15,
+    "dexterity": 10,
+    "constitution": 13,
+    "intelligence": 2,
+    "wisdom": 11,
+    "charisma": 7,
+    "senses": "passive Perception 10",
+    "actions": {
+        "Hooves" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+4",
+            "onHit": "(2d4 + 2) bludgeoning damage"
+        }
+    }
+}

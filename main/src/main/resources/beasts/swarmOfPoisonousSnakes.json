@@ -1,0 +1,40 @@
+{
+    "name": "Swarm of Poisonous Snakes",
+    "cr": 2,
+    "size": "Medium swarm of tiny beasts",
+    "swarm": true,
+    "habitat": "warm,aquatic,underground",
+    "goodFor": "swimming,darkness,swarm",
+    "hp": "36 (8d8)",
+    "ac": 14,
+    "walkingSpeed": 30,
+    "swimmingSpeed": 30,
+    "strength": 8,
+    "dexterity": 18,
+    "constitution": 11,
+    "intelligence": 1,
+    "wisdom": 10,
+    "charisma": 3,
+    "senses": "Blindsight 10 Ft., passive Perception 10",
+    "damageResistance": "Bludgeoning,Piercing,Slashing",
+    "conditionImmunities": "Charmed,Frightened,Grappled,Paralyzed,Petrified,Prone,Restrained,Stunned",
+    "specialAbilities": {
+        "Swarm": "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny snake. The swarm can't regain hit points or gain temporary hit points."
+    },
+    "actions": {
+        "Bites (swarm has more than half HP)" : {
+            "type": "melee",
+            "reach": "0 ft",
+            "target": "one creature in the swarm's space",
+            "toHit": "+6",
+            "onHit": "(2d6) piercing damage. The target must make a DC 10 Constitution saving throw, taking 14 (4d6) poison damage on a failed save, or half as much damage on a successful one"
+        },
+        "Bites (swarm has less than half HP)" : {
+            "type": "melee",
+            "reach": "0 ft",
+            "target": "one creature in the swarm's space",
+            "toHit": "+6",
+            "onHit": "(1d6) piercing damage. The target must make a DC 10 Constitution saving throw, taking 14 (4d6) poison damage on a failed save, or half as much damage on a successful one"
+        }
+    }
+}

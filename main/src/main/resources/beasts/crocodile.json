@@ -3,7 +3,7 @@
     "cr": 0.5,
     "size": "large",
     "habitat": "marsh,aquatic",
-    "goodFor": "swimming,stealth",
+    "goodFor": "combat,swimming,stealth",
     "hp": "19 (3d10+3)",
     "ac": 12,
     "walkingSpeed": 20,
@@ -23,9 +23,9 @@
         "Bite" : {
             "type": "melee",
             "reach": "5 ft",
-            "target": "one",
+            "target": "one target",
             "toHit": "+4",
-            "onHit": "(1d10 + 2) piercing damage. The target is grappled (escape dc 12) Until this grapple ends, the target is restrained, and the crocodile can't bite another target"
+            "onHit": "(1d10 + 2) piercing damage. The target is grappled (escape DC 12) Until this grapple ends, the target is restrained, and the crocodile can't bite another target"
         }
     }
 }

@@ -1,0 +1,40 @@
+{
+    "name": "Swarm of Ravens",
+    "cr": 0.25,
+    "size": "Medium swarm of tiny beasts",
+    "swarm": true,
+    "habitat": "forest,hills,plains,mountains",
+    "goodFor": "flying,speed,swarm",
+    "hp": "24 (7d8-7)",
+    "ac": 12,
+    "walkingSpeed": 10,
+    "flyingSpeed": 50,
+    "strength": 6,
+    "dexterity": 14,
+    "constitution": 8,
+    "intelligence": 3,
+    "wisdom": 12,
+    "charisma": 6,
+    "senses": "passive Perception 15",
+    "damageResistance": "Bludgeoning,Piercing,Slashing",
+    "conditionImmunities": "Charmed,Frightened,Grappled,Paralyzed,Petrified,Prone,Restrained,Stunned",
+    "specialAbilities": {
+        "Swarm": "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny raven. The swarm can't regain hit points or gain temporary hit points."
+    },
+    "actions": {
+        "Beaks (swarm has more than half HP)" : {
+            "type": "melee",
+            "reach": "0 ft",
+            "target": "one creature in the swarm's space",
+            "toHit": "+4",
+            "onHit": "(2d6) piercing damage"
+        },
+        "Beaks (swarm has less than half HP)" : {
+            "type": "melee",
+            "reach": "0 ft",
+            "target": "one creature in the swarm's space",
+            "toHit": "+4",
+            "onHit": "(1d6) piercing damage"
+        }
+    }
+}

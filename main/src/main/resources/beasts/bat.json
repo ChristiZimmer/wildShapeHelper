@@ -2,8 +2,8 @@
     "name": "Bat",
     "cr": 0,
     "size": "tiny",
-    "habitat": "deserts,caves",
-    "goodFor": "flying,darkness",
+    "habitat": "desert,caves",
+    "goodFor": "flying,darkness,hearing",
     "hp": "1 (1d4-1)",
     "ac": 12,
     "walkingSpeed": 5,
@@ -23,7 +23,7 @@
         "Bite" : {
             "type": "melee",
             "reach": "5 ft",
-            "target": "one",
+            "target": "one target",
             "toHit": "+0",
             "onHit": "(1d1) piercing damage"
         }

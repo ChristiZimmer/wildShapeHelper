@@ -1,0 +1,38 @@
+{
+    "name": "Tiger",
+    "cr": 1,
+    "size": "large",
+    "habitat": "forest,plains",
+    "goodFor": "combat,stealth,smelling,darkness",
+    "hp": "37 (5d10+10)",
+    "ac": 12,
+    "walkingSpeed": 40,
+    "strength": 17,
+    "dexterity": 15,
+    "constitution": 14,
+    "intelligence": 3,
+    "wisdom": 12,
+    "charisma": 8,
+    "skills": "Perception +3, Stealth +6",
+    "senses": "Darkvision 60 Ft., passive Perception 13",
+    "specialAbilities": {
+        "Keen Smell": "The tiger has advantage on Wisdom (Perception) checks that rely on smell.",
+        "Pounce": "If the tiger moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the tiger can make one bite attack against it as a bonus action."
+    },
+    "actions": {
+        "Bite" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+5",
+            "onHit": "(1d10 + 3) piercing damage"
+        },
+        "Claw" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+5",
+            "onHit": "(1d8 + 3) slashing damage"
+        }
+    }
+}

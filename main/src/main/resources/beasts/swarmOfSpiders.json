@@ -1,0 +1,43 @@
+{
+    "name": "Swarm of Spiders",
+    "cr": 0.5,
+    "size": "Medium swarm of tiny beasts",
+    "swarm": true,
+    "habitat": "forest,urban",
+    "goodFor": "climbing,darkness,swarm",
+    "hp": "22 (5d8)",
+    "ac": 12,
+    "walkingSpeed": 20,
+    "climbingSpeed": 20,
+    "strength": 3,
+    "dexterity": 13,
+    "constitution": 10,
+    "intelligence": 1,
+    "wisdom": 7,
+    "charisma": 1,
+    "senses": "Blindsight 10 Ft., passive Perception 8",
+    "damageResistance": "Bludgeoning,Piercing,Slashing",
+    "conditionImmunities": "Charmed,Frightened,Grappled,Paralyzed,Petrified,Prone,Restrained,Stunned",
+    "specialAbilities": {
+        "Spider Climb": "The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check",
+        "Web Sense": "While in contact with a web, the spider knows the exact location of any other creature in contact with the same web",
+        "Web Walker": "The spider ignores movement restrictions caused by webbing.",
+        "Swarm": "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny insect. The swarm can't regain hit points or gain temporary hit points."
+    },
+    "actions": {
+        "Bites (swarm has more than half HP)" : {
+            "type": "melee",
+            "reach": "0 ft",
+            "target": "one creature in the swarm's space",
+            "toHit": "+3",
+            "onHit": "(4d4) piercing damage"
+        },
+        "Bites (swarm has less than half HP)" : {
+            "type": "melee",
+            "reach": "0 ft",
+            "target": "one creature in the swarm's space",
+            "toHit": "+3",
+            "onHit": "(2d4) piercing damage"
+        }
+    }
+}

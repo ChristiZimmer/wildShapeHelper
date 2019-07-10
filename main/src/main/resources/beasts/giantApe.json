@@ -2,7 +2,7 @@
     "name": "Giant Ape",
     "cr": 7,
     "size": "huge",
-    "habitat": "forest,mountain",
+    "habitat": "forest,mountains",
     "goodFor": "combat,climbing",
     "hp": "157 (15d12+60)",
     "ac": 12,
@@ -23,14 +23,14 @@
         "Fist" : {
             "type": "melee",
             "reach": "5 ft",
-            "target": "one",
+            "target": "one target",
             "toHit": "+9",
             "onHit": "(3d10 + 6) bludgeoning damage"
         },
         "Rock" : {
             "type": "ranged",
             "reach": "50/100 ft",
-            "target": "one",
+            "target": "one target",
             "toHit": "+9",
             "onHit": "(7d6 + 6) bludgeoning damage"
         }

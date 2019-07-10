@@ -1,0 +1,31 @@
+{
+    "name": "Jackal",
+    "cr": 0,
+    "size": "small",
+    "habitat": "desert,plains,forest,mountains,marsh",
+    "goodFor": "combat,speed,hearing,smelling",
+    "hp": "3 (1d6)",
+    "ac": 12,
+    "walkingSpeed": 50,
+    "strength": 11,
+    "dexterity": 13,
+    "constitution": 12,
+    "intelligence": 2,
+    "wisdom": 12,
+    "charisma": 5,
+    "skills": "Perception +3",
+    "senses": "passive Perception 13",
+    "specialAbilities": {
+        "Keen Hearing and Smell": "The jackal has advantage on Wisdom (Perception) checks that rely on hearing or smell.",
+        "Pack Tactics": "The hyena has advantage on an attack roll against a creature if at least one of the hyena's allies is within 5 ft. of the creature and the ally isn't incapacitated."
+    },
+    "actions": {
+        "Bite" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+1",
+            "onHit": "(1d4 - 1) piercing damage"
+        }
+    }
+}

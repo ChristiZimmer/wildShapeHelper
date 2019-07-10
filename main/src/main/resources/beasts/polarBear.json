@@ -1,0 +1,41 @@
+{
+    "name": "Polar Bear",
+    "cr": 2,
+    "size": "large",
+    "habitat": "cold,plains",
+    "goodFor": "combat,swimming,smelling",
+    "hp": "42 (5d10+15)",
+    "ac": 12,
+    "walkingSpeed": 40,
+    "swimmingSpeed": 30,
+    "strength": 20,
+    "dexterity": 10,
+    "constitution": 16,
+    "intelligence": 2,
+    "wisdom": 13,
+    "charisma": 7,
+    "skills": "Perception +3",
+    "senses": "passive Perception 13",
+    "specialAbilities": {
+        "Keen Smell": "The bear has advantage on Wisdom (Perception) checks that rely on smell."
+    },
+    "actions": {
+        "Multiattack": {
+            "desc": "The bear makes two attacks: one with its bite and one with its claws."
+        },
+        "Bite" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+5",
+            "onHit": "(1d8 + 5) piercing damage"
+        },
+        "Claws" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+5",
+            "onHit": "(2d6 + 5) slashing damage"
+        }
+    }
+}

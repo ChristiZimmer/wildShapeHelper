@@ -1,0 +1,31 @@
+{
+    "name": "Giant Crab",
+    "cr": 0.125,
+    "size": "medium",
+    "habitat": "aquatic,coastal",
+    "goodFor": "combat,stealth,darkness",
+    "hp": "13 (3d8)",
+    "ac": 11,
+    "walkingSpeed": 30,
+    "swimmingSpeed": 30,
+    "strength": 13,
+    "dexterity": 15,
+    "constitution": 11,
+    "intelligence": 1,
+    "wisdom": 9,
+    "charisma": 3,
+    "skills": "Stealth +4",
+    "senses": "Blindsight 30 Ft., passive Perception 9",
+    "specialAbilities": {
+        "Amphibious": "The crab can breathe air and water."
+    },
+    "actions": {
+        "Claw": {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+3",
+            "onHit": "(1d6 + 1) bludgeoning damage. The target is grappled (escape DC 11) The crab has two claws, each of which can grapple only one target"
+        }
+    }
+}

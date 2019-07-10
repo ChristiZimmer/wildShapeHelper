@@ -1,0 +1,29 @@
+{
+    "name": "Rat",
+    "cr": 0,
+    "size": "tiny",
+    "habitat": "any",
+    "goodFor": "darkness,smelling",
+    "hp": "1 (1d4-1)",
+    "ac": 10,
+    "walkingSpeed": 30,
+    "strength": 7,
+    "dexterity": 15,
+    "constitution": 11,
+    "intelligence": 2,
+    "wisdom": 10,
+    "charisma": 4,
+    "senses": "Darkvision 60 ft., passive Perception 10",
+    "specialAbilities": {
+        "Keen Smell": "The rat has advantage on Wisdom (Perception) checks that rely on smell."
+    },
+    "actions": {
+        "Bite" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+0",
+            "onHit": "(1d1) piercing damage"
+        }
+    }
+}

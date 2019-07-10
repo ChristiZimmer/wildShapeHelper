@@ -23,7 +23,7 @@
         "Bite" : {
             "type": "melee",
             "reach": "5 ft",
-            "target": "one",
+            "target": "one target",
             "toHit": "+6",
             "onHit": "(1d1) piercing damage plus (3d4)poison damage"
         }

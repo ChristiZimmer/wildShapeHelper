@@ -2,8 +2,8 @@
     "name": "Blood Hawk",
     "cr": 0.125,
     "size": "small",
-    "habitat": "forest,hill,plains,mountains",
-    "goodFor": "flying,speed",
+    "habitat": "forest,hills,plains,mountains",
+    "goodFor": "flying,speed,seeing",
     "hp": "7 (2d6)",
     "ac": 12,
     "walkingSpeed": 10,
@@ -24,7 +24,7 @@
         "Beak" : {
             "type": "melee",
             "reach": "5 ft",
-            "target": "one",
+            "target": "one target",
             "toHit": "+5",
             "onHit": "(1d4 + 2) piercing damage"
         }

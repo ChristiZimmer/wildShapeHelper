@@ -1,0 +1,41 @@
+{
+    "name": "Giant Crocodile",
+    "cr": 5,
+    "size": "huge",
+    "habitat": "marsh,aquatic",
+    "goodFor": "combat,swimming,stealth",
+    "hp": "85 (9d12+27)",
+    "ac": 14,
+    "walkingSpeed": 30,
+    "swimmingSpeed": 50,
+    "strength": 21,
+    "dexterity": 9,
+    "constitution": 17,
+    "intelligence": 2,
+    "wisdom": 10,
+    "charisma": 7,
+    "skills": "Stealth +5",
+    "senses": "passive Perception 10",
+    "specialAbilities": {
+        "Hold Breath": "The crocodile can hold its breath for 30 minutes."
+    },
+    "actions": {
+        "Multiattack": {
+            "desc": "The crocodile makes two attacks: one with its bite and one with its tail."
+        },
+        "Bite" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+8",
+            "onHit": "(3d10 + 5) piercing damage. The target is grappled (escape DC 16) Until this grapple ends, the target is restrained, and the crocodile can't bite another target"
+        },
+        "Tail" : {
+            "type": "melee",
+            "reach": "10 ft",
+            "target": "one target",
+            "toHit": "+8",
+            "onHit": "(2d8 + 5) bludgeoning damage. If the target is a creature, it must succeed on a DC 16 Strength saving throw or be knocked prone"
+        }
+    }
+}

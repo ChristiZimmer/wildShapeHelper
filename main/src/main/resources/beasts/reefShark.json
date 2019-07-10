@@ -1,0 +1,31 @@
+{
+    "name": "Reef Shark",
+    "cr": 0.5,
+    "size": "medium",
+    "habitat": "aquatic",
+    "goodFor": "combat,swimming,darkness",
+    "hp": "22 (4d8+4)",
+    "ac": 12,
+    "swimmingSpeed": 40,
+    "strength": 14,
+    "dexterity": 13,
+    "constitution": 13,
+    "intelligence": 1,
+    "wisdom": 10,
+    "charisma": 4,
+    "skills": "Perception +2",
+    "senses": "Blindsight 30 Ft., passive Perception 12",
+    "specialAbilities": {
+        "Pack Tactics": "The shark has advantage on an attack roll against a creature if at least one of the shark's allies is within 5 ft. of the creature and the ally isn't incapacitated.",
+        "Water Breathing": "The shark can breathe only underwater"
+    },
+    "actions": {
+        "Bite" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+4",
+            "onHit": "(1d8 + 2) piercing damage"
+        }
+    }
+}

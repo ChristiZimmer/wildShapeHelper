@@ -1,0 +1,37 @@
+{
+    "name": "Mammoth",
+    "cr": 6,
+    "size": "huge",
+    "extinct": true,
+    "habitat": "cold",
+    "goodFor": "combat,transport",
+    "hp": "126 (11d12+55)",
+    "ac": 13,
+    "walkingSpeed": 40,
+    "strength": 24,
+    "dexterity": 9,
+    "constitution": 21,
+    "intelligence": 3,
+    "wisdom": 11,
+    "charisma": 6,
+    "senses": "passive Perception 10",
+    "specialAbilities": {
+        "Trampling Charge": "If the mammoth moves at least 20 ft. straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 18 Strength saving throw or be knocked prone. If the target is prone, the mammoth can make one stomp attack against it as a bonus action."
+    },
+    "actions": {
+        "Gore" : {
+            "type": "melee",
+            "reach": "10 ft",
+            "target": "one target",
+            "toHit": "+10",
+            "onHit": "(4d8 + 7) piercing damage"
+        },
+        "Stomp" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one prone creature",
+            "toHit": "+10",
+            "onHit": "(4d10 + 7) bludgeoning damage"
+        }
+    }
+}

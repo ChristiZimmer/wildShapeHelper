@@ -2,7 +2,7 @@
     "name": "Elk",
     "cr": 0.25,
     "size": "large",
-    "habitat": "forest,hill,mountain",
+    "habitat": "forest,hills,mountains",
     "goodFor": "combat,speed",
     "hp": "13 (2d10+2)",
     "ac": 10,
@@ -15,13 +15,13 @@
     "charisma": 6,
     "senses": "passive Perception 10",
     "specialAbilities": {
-        "Charge": "If the elk moves at least 20 ft. straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone."
+        "Charge": "If the elk moves at least 20 ft. straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra (2d6) damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone."
     },
     "actions": {
         "Ram" : {
             "type": "melee",
             "reach": "5 ft",
-            "target": "one",
+            "target": "one target",
             "toHit": "+5",
             "onHit": "(1d6 + 3) bludgeoning damage"
         },

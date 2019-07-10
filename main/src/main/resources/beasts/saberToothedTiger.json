@@ -1,0 +1,39 @@
+{
+    "name": "Saber-Toothed Tiger",
+    "cr": 2,
+    "size": "large",
+    "extinct": true,
+    "habitat": "forest,plains",
+    "goodFor": "combat,stealth,smelling",
+    "hp": "52 (7d10 + 14)",
+    "ac": 12,
+    "walkingSpeed": 40,
+    "strength": 18,
+    "dexterity": 14,
+    "constitution": 15,
+    "intelligence": 3,
+    "wisdom": 12,
+    "charisma": 8,
+    "skills": "Perception +3, Stealth +6",
+    "senses": "passive Perception 13",
+    "specialAbilities": {
+        "Keen Smell": "The tiger has advantage on Wisdom (Perception) checks that rely on smell.",
+        "Pounce": "If the tiger moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the tiger can make one bite attack against it as a bonus action."
+    },
+    "actions": {
+        "Bite" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+6",
+            "onHit": "(1d10 + 5) piercing damage"
+        },
+        "Claw" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+6",
+            "onHit": "(2d6 + 5) slashing damage"
+        }
+    }
+}

@@ -2,8 +2,8 @@
     "name": "Brown Bear",
     "cr": 1,
     "size": "large",
-    "habitat": "forest,hill,mountains,underground",
-    "goodFor": "combat,climbing,transport",
+    "habitat": "forest,hills,mountains,underground",
+    "goodFor": "combat,climbing,transport,smelling",
     "hp": "34 (4d10+12)",
     "ac": 11,
     "walkingSpeed": 40,
@@ -26,14 +26,14 @@
         "Bite" : {
             "type": "melee",
             "reach": "5 ft",
-            "target": "one",
+            "target": "one target",
             "toHit": "+5",
             "onHit": "(1d8 + 4) piercing damage"
         },
         "Claws" : {
             "type": "melee",
             "reach": "5 ft",
-            "target": "one",
+            "target": "one target",
             "toHit": "+5",
             "onHit": "(2d6 + 4) slashing damage"
         }

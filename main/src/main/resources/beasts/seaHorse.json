@@ -1,0 +1,20 @@
+{
+    "name": "Sea Horse",
+    "cr": 0,
+    "size": "tiny",
+    "habitat": "aquatic",
+    "goodFor": "swimming",
+    "hp": "1 (1d4-1)",
+    "ac": 11,
+    "swimmingSpeed": 20,
+    "strength": 1,
+    "dexterity": 12,
+    "constitution": 8,
+    "intelligence": 1,
+    "wisdom": 10,
+    "charisma": 2,
+    "senses": "passive Perception 10",
+    "specialAbilities": {
+        "Water Breathing": "The sea horse can breathe only underwater."
+    }
+}

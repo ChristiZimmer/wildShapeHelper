@@ -1,0 +1,30 @@
+{
+    "name": "Giant Weasel",
+    "cr": 0.125,
+    "size": "medium",
+    "habitat": "hills",
+    "goodFor": "darkness,stealth,hearing,smelling",
+    "hp": "9 (2d8)",
+    "ac": 13,
+    "walkingSpeed": 40,
+    "strength": 11,
+    "dexterity": 16,
+    "constitution": 10,
+    "intelligence": 4,
+    "wisdom": 12,
+    "charisma": 5,
+    "skills": "Perception +3, Stealth +5",
+    "senses": "Darkvision 60 Ft., passive Perception 13",
+    "specialAbilities": {
+        "Keen Hearing and Smell": "The weasel has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+    },
+    "actions": {
+        "Bite" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+5",
+            "onHit": "(1d4 + 3) piercing damage"
+        }
+    }
+}

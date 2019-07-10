@@ -2,8 +2,8 @@
     "name": "Black Bear",
     "cr": 0.5,
     "size": "medium",
-    "habitat": "forest,hill,mountain",
-    "goodFor": "combat,climbing",
+    "habitat": "forest,hills,mountains",
+    "goodFor": "combat,climbing,smelling",
     "hp": "19 (3d8+6)",
     "ac": 11,
     "walkingSpeed": 40,
@@ -25,14 +25,14 @@
         "Bite" : {
             "type": "melee",
             "reach": "5 ft",
-            "target": "one",
+            "target": "one target",
             "toHit": "+3",
             "onHit": "(1d6 + 2) piercing damage"
         },
         "Claws" : {
             "type": "melee",
             "reach": "5 ft",
-            "target": "one",
+            "target": "one target",
             "toHit": "+3",
             "onHit": "(2d4 + 2) slashing damage"
         }

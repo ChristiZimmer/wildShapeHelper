@@ -3,7 +3,7 @@
     "cr": 0.125,
     "size": "small",
     "habitat": "any",
-    "goodFor": "darkness",
+    "goodFor": "darkness,smelling",
     "hp": "7 (2d6)",
     "ac": 12,
     "walkingSpeed": 30,
@@ -22,7 +22,7 @@
         "Bite" : {
             "type": "melee",
             "reach": "5 ft",
-            "target": "one",
+            "target": "one target",
             "toHit": "+4",
             "onHit": "(1d4 + 2) piercing damage"
         }

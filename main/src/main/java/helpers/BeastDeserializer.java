@@ -31,6 +31,8 @@ public class BeastDeserializer extends StdDeserializer<Beast> {
         String name = node.get("name").asText();
         double cr = node.get("cr").doubleValue();
         String size = node.get("size").asText();
+        boolean extinct = node.get("extinct") != null && node.get("extinct").asBoolean();
+        boolean swarm = node.get("swarm") != null && node.get("swarm").asBoolean();
         String[] habitat = node.get("habitat") != null ? node.get("habitat").asText().split(",") : null;
         String[] goodFor = node.get("goodFor") != null ? node.get("goodFor").asText().split(","): null;
         String hp = node.get("hp").asText();
@@ -48,7 +50,10 @@ public class BeastDeserializer extends StdDeserializer<Beast> {
         int charisma = node.get("charisma").intValue();
         String skills = node.get("skills") != null ? node.get("skills").asText() : null;
         String senses = node.get("senses") != null ? node.get("senses").asText() : null;
+        String languages = node.get("languages") != null ? node.get("languages").asText() : null;
+        String damageResistance = node.get("damageResistance") != null ? node.get("damageResistance").asText() : null;
         String damageImmunities = node.get("damageImmunities") != null ? node.get("damageImmunities").asText() : null;
+        String conditionResistance = node.get("conditionResistance") != null ? node.get("conditionResistance").asText() : null;
         String conditionImmunities = node.get("conditionImmunities") != null ? node.get("conditionImmunities").asText() : null;
 
         ObjectMapper objectMapper = new ObjectMapper();
@@ -58,8 +63,8 @@ public class BeastDeserializer extends StdDeserializer<Beast> {
             node.get("actions").forEach(e -> actions.add(objectMapper.convertValue(e, Attack.class)));
         }
 
-        return new Beast(name, cr, size, habitat, goodFor, hp, ac, walkingSpeed, swimmingSpeed, flyingSpeed,
+        return new Beast(name, cr, size, extinct, swarm, habitat, goodFor, hp, ac, walkingSpeed, swimmingSpeed, flyingSpeed,
                 climbingSpeed, burrow, strength, dexterity, constitution, intelligence, wisdom, charisma, skills, senses,
-                damageImmunities, conditionImmunities, specialAbilities, actions);
+                languages, damageResistance, damageImmunities, conditionResistance, conditionImmunities, specialAbilities, actions);
     }
 }

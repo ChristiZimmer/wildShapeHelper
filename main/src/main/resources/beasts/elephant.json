@@ -21,11 +21,11 @@
         "Gore" : {
             "type": "melee",
             "reach": "5 ft",
-            "target": "one",
+            "target": "one target",
             "toHit": "+8",
             "onHit": "(3d8 + 6) piercing damage"
         },
-        "Fist" : {
+        "Stomp" : {
             "type": "melee",
             "reach": "5 ft",
             "target": "one prone creature",

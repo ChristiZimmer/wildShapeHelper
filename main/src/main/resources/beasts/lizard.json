@@ -1,0 +1,27 @@
+{
+    "name": "Lizard",
+    "cr": 0,
+    "size": "tiny",
+    "habitat": "warm",
+    "goodFor": "combat,climbing,darkness",
+    "hp": "2 (1d4)",
+    "ac": 10,
+    "walkingSpeed": 20,
+    "climbingSpeed": 20,
+    "strength": 2,
+    "dexterity": 11,
+    "constitution": 10,
+    "intelligence": 1,
+    "wisdom": 8,
+    "charisma": 3,
+    "senses": "Darkvision 30 Ft., passive Perception 9",
+    "actions": {
+        "Bite" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+0",
+            "onHit": "(1d1) piercing damage"
+        }
+    }
+}

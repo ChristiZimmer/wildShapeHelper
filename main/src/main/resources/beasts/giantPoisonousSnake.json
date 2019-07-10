@@ -1,0 +1,28 @@
+{
+    "name": "Giant Poisonous Snake",
+    "cr": 0.25,
+    "size": "medium",
+    "habitat": "warm,aquatic,underground",
+    "goodFor": "combat,swimming,darkness",
+    "hp": "11 (2d8+2)",
+    "ac": 14,
+    "walkingSpeed": 30,
+    "swimmingSpeed": 30,
+    "strength": 10,
+    "dexterity": 18,
+    "constitution": 13,
+    "intelligence": 2,
+    "wisdom": 10,
+    "charisma": 3,
+    "skills": "Perception +2",
+    "senses": "Blindsight 10 Ft., passive Perception 12",
+    "actions": {
+        "Bite" : {
+            "type": "melee",
+            "reach": "10 ft",
+            "target": "one target",
+            "toHit": "+6",
+            "onHit": "(1d4 + 4) piercing damage, and the target must make a DC 11 Constitution saving throw, taking (3d6) poison damage on a failed save, or half as much damage on a successful one."
+        }
+    }
+}

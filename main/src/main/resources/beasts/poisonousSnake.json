@@ -1,0 +1,28 @@
+{
+    "name": "Poisonous Snake",
+    "cr": 0.125,
+    "size": "tiny",
+    "habitat": "warm,aquatic,underground",
+    "goodFor": "combat,swimming,darkness",
+    "hp": "2 (1d4)",
+    "ac": 13,
+    "walkingSpeed": 30,
+    "swimmingSpeed": 30,
+    "strength": 2,
+    "dexterity": 16,
+    "constitution": 11,
+    "intelligence": 1,
+    "wisdom": 10,
+    "charisma": 3,
+    "skills": "Perception +2",
+    "senses": "Blindsight 10 Ft., passive Perception 10",
+    "actions": {
+        "Bite" : {
+            "type": "melee",
+            "reach": "10 ft",
+            "target": "one target",
+            "toHit": "+5",
+            "onHit": "(1d1) piercing damage, and the target must make a DC 10 Constitution saving throw, taking (2d4) poison damage on a failed save, or half as much damage on a successful one."
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "name": "Wolf",
+    "cr": 0.25,
+    "size": "medium",
+    "habitat": "forest",
+    "goodFor": "combat,speed,stealth,hearing,smelling",
+    "hp": "11 (2d8+2)",
+    "ac": 13,
+    "walkingSpeed": 40,
+    "strength": 12,
+    "dexterity": 15,
+    "constitution": 12,
+    "intelligence": 3,
+    "wisdom": 12,
+    "charisma": 6,
+    "skills": "Perception +3, Stealth +4",
+    "senses": "passive Perception 13",
+    "specialAbilities": {
+        "Keen Hearing and Smell": "The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell.",
+        "Pack Tactics": "The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 ft. of the creature and the ally isn't incapacitated."
+    },
+    "actions": {
+        "Bite" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+4",
+            "onHit": "(2d4 + 2) piercing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone"
+        }
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "name": "Swarm of Wasps",
+    "cr": 0.5,
+    "size": "Medium swarm of tiny beasts",
+    "swarm": true,
+    "habitat": "forest",
+    "goodFor": "climbing,darkness,swarm",
+    "hp": "22 (5d8)",
+    "ac": 12,
+    "walkingSpeed": 5,
+    "flyingSpeed": 30,
+    "strength": 3,
+    "dexterity": 13,
+    "constitution": 10,
+    "intelligence": 1,
+    "wisdom": 7,
+    "charisma": 1,
+    "senses": "Blindsight 10 Ft., passive Perception 8",
+    "damageResistance": "Bludgeoning,Piercing,Slashing",
+    "conditionImmunities": "Charmed,Frightened,Grappled,Paralyzed,Petrified,Prone,Restrained,Stunned",
+    "specialAbilities": {
+        "Swarm": "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny insect. The swarm can't regain hit points or gain temporary hit points."
+    },
+    "actions": {
+        "Bites (swarm has more than half HP)" : {
+            "type": "melee",
+            "reach": "0 ft",
+            "target": "one creature in the swarm's space",
+            "toHit": "+3",
+            "onHit": "(4d4) piercing damage"
+        },
+        "Bites (swarm has less than half HP)" : {
+            "type": "melee",
+            "reach": "0 ft",
+            "target": "one creature in the swarm's space",
+            "toHit": "+3",
+            "onHit": "(2d4) piercing damage"
+        }
+    }
+}

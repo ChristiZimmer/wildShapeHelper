@@ -2,8 +2,8 @@
     "name": "Eagle",
     "cr": 0,
     "size": "small",
-    "habitat": "forest,hill,plains,mountains",
-    "goodFor": "flying,speed",
+    "habitat": "forest,hills,plains,mountains",
+    "goodFor": "flying,speed,seeing",
     "hp": "3 (1d6)",
     "ac": 12,
     "walkingSpeed": 10,
@@ -23,7 +23,7 @@
         "Talons" : {
             "type": "melee",
             "reach": "5 ft",
-            "target": "one",
+            "target": "one target",
             "toHit": "+4",
             "onHit": "(1d4 + 2) slashing damage"
         }

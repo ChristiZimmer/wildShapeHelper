@@ -2,7 +2,7 @@
     "name": "Ape",
     "cr": 0.5,
     "size": "medium",
-    "habitat": "forest,mountain",
+    "habitat": "forest,mountains",
     "goodFor": "combat,climbing",
     "hp": "19 (3d8+6)",
     "ac": 12,
@@ -23,14 +23,14 @@
         "Fist" : {
             "type": "melee",
             "reach": "5 ft",
-            "target": "one",
+            "target": "one target",
             "toHit": "+5",
             "onHit": "(1d6 + 3) bludgeoning damage"
         },
         "Rock" : {
             "type": "ranged",
             "reach": "25/50 ft",
-            "target": "one",
+            "target": "one target",
             "toHit": "+5",
             "onHit": "(1d6 + 3) bludgeoning damage"
         }

@@ -1,0 +1,30 @@
+{
+    "name": "Giant Boar",
+    "cr": 2,
+    "size": "large",
+    "habitat": "forest",
+    "goodFor": "combat",
+    "hp": "42 (5d10+5)",
+    "ac": 12,
+    "walkingSpeed": 40,
+    "strength": 17,
+    "dexterity": 10,
+    "constitution": 16,
+    "intelligence": 2,
+    "wisdom": 7,
+    "charisma": 5,
+    "senses": "passive Perception 8",
+    "specialAbilities": {
+        "Charge": "If the boar moves at least 20 ft. straight toward a target and then hits it with a tusk attack on the same turn, the target takes an extra (2d6) slashing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.",
+        "Relentless": "(Recharges after a Short or Long Rest). If the boar takes 10 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead."
+    },
+    "actions": {
+        "Tusk" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+5",
+            "onHit": "(2d6 + 3) slashing damage"
+        }
+    }
+}

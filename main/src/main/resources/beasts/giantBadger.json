@@ -1,0 +1,41 @@
+{
+    "name": "Giant Badger",
+    "cr": 0.25,
+    "size": "medium",
+    "habitat": " forest,hills,plains,underground",
+    "goodFor": "combat,digging,darkness,smelling",
+    "hp": "13 (2d8+4)",
+    "ac": 10,
+    "walkingSpeed": 30,
+    "climbingSpeed": 30,
+    "burrow": 10,
+    "strength": 13,
+    "dexterity": 10,
+    "constitution": 15,
+    "intelligence": 2,
+    "wisdom": 12,
+    "charisma": 5,
+    "senses": "Darkvision 30 Ft., passive Perception 11",
+    "specialAbilities": {
+        "Keen Smell": "The badger has advantage on Wisdom (Perception) checks that rely on smell."
+    },
+    "actions": {
+        "Multiattack": {
+            "desc": "The badger makes two attacks: one with its bite and one with its claws."
+        },
+        "Bite" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+3",
+            "onHit": "(1d6 + 1) piercing damage"
+        },
+        "Claws" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+3",
+            "onHit": "(2d4 + 1) slashing damage"
+        }
+    }
+}

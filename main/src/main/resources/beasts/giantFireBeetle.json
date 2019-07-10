@@ -1,0 +1,29 @@
+{
+    "name": "Giant Fire Beetle",
+    "cr": 0,
+    "size": "small",
+    "habitat": "forest,underground",
+    "goodFor": "darkness",
+    "hp": "4 (1d6+1)",
+    "ac": 13,
+    "walkingSpeed": 30,
+    "strength": 8,
+    "dexterity": 10,
+    "constitution": 12,
+    "intelligence": 1,
+    "wisdom": 7,
+    "charisma": 3,
+    "senses": "Blindsight 30 Ft., passive Perception 8",
+    "specialAbilities": {
+        "Illumination": "The beetle sheds bright light in a 10-foot radius and dim light for an additional 10 ft.."
+    },
+    "actions": {
+        "Bite" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+1",
+            "onHit": " (1d6 - 1) slashing damage"
+        }
+    }
+}

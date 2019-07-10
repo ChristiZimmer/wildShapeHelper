@@ -2,8 +2,8 @@
     "name": "Badger",
     "cr": 0,
     "size": "tiny",
-    "habitat": "forest,hill,plains,underground",
-    "goodFor": "digging,darkness",
+    "habitat": "forest,hills,plains,underground",
+    "goodFor": "digging,darkness,smelling",
     "hp": "3 (1d4+1)",
     "ac": 10,
     "walkingSpeed": 20,
@@ -22,7 +22,7 @@
         "Bite" : {
             "type": "melee",
             "reach": "5 ft",
-            "target": "one",
+            "target": "one target",
             "toHit": "+2",
             "onHit": "(1d1) piercing damage"
         }

@@ -1,0 +1,32 @@
+{
+    "name": "Plesiosaurus",
+    "cr": 2,
+    "size": "large",
+    "extinct": true,
+    "habitat": "aquatic",
+    "goodFor": "combat,stealth,swimming",
+    "hp": "68 (8d10+24)",
+    "ac": 13,
+    "walkingSpeed": 20,
+    "swimmingSpeed": 40,
+    "strength": 18,
+    "dexterity": 15,
+    "constitution": 16,
+    "intelligence": 2,
+    "wisdom": 12,
+    "charisma": 5,
+    "skills": "Perception +3, Stealth +4",
+    "senses": "passive Perception 13",
+    "specialAbilities": {
+        "Hold Breath": "The plesiosaurus can hold its breath for 1 hour."
+    },
+    "actions": {
+        "Bite" : {
+            "type": "melee",
+            "reach": "10 ft",
+            "target": "one target",
+            "toHit": "+6",
+            "onHit": "(3d6 + 4) piercing damage"
+        }
+    }
+}

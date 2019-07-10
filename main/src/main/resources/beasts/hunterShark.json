@@ -1,0 +1,31 @@
+{
+    "name": "Hunter Shark",
+    "cr": 2,
+    "size": "large",
+    "habitat": "aquatic",
+    "goodFor": "combat,swimming,darkness",
+    "hp": "45 (6d10+12)",
+    "ac": 12,
+    "swimmingSpeed": 40,
+    "strength": 18,
+    "dexterity": 13,
+    "constitution": 15,
+    "intelligence": 1,
+    "wisdom": 10,
+    "charisma": 4,
+    "skills": "Perception +2",
+    "senses": "Blindsight 30 Ft., passive Perception 12",
+    "specialAbilities": {
+        "Blood Frenzy": "The shark has advantage on melee attack rolls against any creature that doesn't have all its hit points.",
+        "Water Breathing": "The shark can breathe only underwater"
+    },
+    "actions": {
+        "Bite" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+6",
+            "onHit": "(2d8 + 4) piercing damage"
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "name": "Mastiff",
+    "cr": 0.125,
+    "size": "medium",
+    "habitat": "urban",
+    "goodFor": "combat,hearing,smelling",
+    "hp": "5 (1d8+1)",
+    "ac": 12,
+    "walkingSpeed": 40,
+    "strength": 13,
+    "dexterity": 14,
+    "constitution": 12,
+    "intelligence": 3,
+    "wisdom": 12,
+    "charisma": 7,
+    "skills": "Perception +3",
+    "senses": "passive Perception 13",
+    "specialAbilities": {
+        "Keen Hearing and Smell": "The mastiff has advantage on Wisdom (Perception) checks that rely on hearing or smell"
+    },
+    "actions": {
+        "Bite" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+3",
+            "onHit": "(1d6 + 1) piercing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone"
+        }
+    }
+}

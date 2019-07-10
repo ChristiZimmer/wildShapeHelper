@@ -1,0 +1,27 @@
+{
+    "name": "Stirge",
+    "cr": 0.125,
+    "size": "tiny",
+    "habitat": "forest,mountains",
+    "goodFor": "flying,darkness",
+    "hp": "2 (1d4)",
+    "ac": 14,
+    "walkingSpeed": 10,
+    "flyingSpeed": 40,
+    "strength": 4,
+    "dexterity": 16,
+    "constitution": 11,
+    "intelligence": 2,
+    "wisdom": 8,
+    "charisma": 6,
+    "senses": "Darkvision 60 Ft., passive Perception 9",
+    "actions": {
+        "Blood Drain" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+5",
+            "onHit": "(1d4 + 3) piercing damage. The stirge attaches to the target While attached, the stirge doesn't attack. Instead, at the start of each of the stirge's turns, the target loses (1d4 + 3) hit points due to blood loss. The stirge can detach itself by spending 5 feet of its movement. It does so after it drains 10 hit points of blood from the target or the target dies. A creature, including the target, can use its action to detach the stirge"
+        }
+    }
+}

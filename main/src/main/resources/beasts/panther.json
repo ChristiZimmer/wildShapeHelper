@@ -1,0 +1,39 @@
+{
+    "name": "Panther",
+    "cr": 0.25,
+    "size": "medium",
+    "habitat": "forest,mountains,desert,plains,marsh,swamp",
+    "goodFor": "combat,climbing,speed,smelling,stealth",
+    "hp": "13 (3d8)",
+    "ac": 12,
+    "walkingSpeed": 50,
+    "climbingSpeed": 40,
+    "strength": 14,
+    "dexterity": 15,
+    "constitution": 10,
+    "intelligence": 3,
+    "wisdom": 14,
+    "charisma": 7,
+    "skills": "Perception +4, Stealth +6",
+    "senses": "passive Perception 14",
+    "specialAbilities": {
+        "Keen Smell": "The panther has advantage on Wisdom (Perception) checks that rely on smell",
+        "Pounce": "If the panther moves at least 20 ft. straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 12 Strength saving throw or be knocked prone. If the target is prone, the panther can make one bite attack against it as a bonus action."
+    },
+    "actions": {
+        "Bite" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+4",
+            "onHit": "(1d6 + 2) piercing damage"
+        },
+        "Claw" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+4",
+            "onHit": "(1d4 + 2) slashing damage"
+        }
+    }
+}

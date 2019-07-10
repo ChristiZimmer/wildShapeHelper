@@ -1,0 +1,31 @@
+{
+    "name": "Raven",
+    "cr": 0,
+    "size": "tiny",
+    "habitat": "forest,hills,plains,mountains",
+    "goodFor": "flying,speed",
+    "hp": "1 (1d4-1)",
+    "ac": 12,
+    "walkingSpeed": 10,
+    "flyingSpeed": 50,
+    "strength": 2,
+    "dexterity": 14,
+    "constitution": 8,
+    "intelligence": 2,
+    "wisdom": 12,
+    "charisma": 6,
+    "skills": "Perception +3",
+    "senses": "passive Perception 13",
+    "specialAbilities": {
+        "Mimicry": "The raven can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful DC 10 Wisdom (Insight) check."
+    },
+    "actions": {
+        "Beak" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+4",
+            "onHit": "(1d1) piercing damage"
+        }
+    }
+}

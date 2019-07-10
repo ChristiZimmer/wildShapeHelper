@@ -1,0 +1,30 @@
+{
+    "name": "Giant Goat",
+    "cr": 0.25,
+    "size": "large",
+    "habitat": "plains,hills,mountains",
+    "goodFor": "combat",
+    "hp": "19 (3d10+3)",
+    "ac": 11,
+    "walkingSpeed": 40,
+    "strength": 17,
+    "dexterity": 11,
+    "constitution": 12,
+    "intelligence": 3,
+    "wisdom": 12,
+    "charisma": 6,
+    "senses": "passive Perception 11",
+    "specialAbilities": {
+        "Charge": "If the goat moves at least 20 ft. straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra (2d4) bludgeoning damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.",
+        "Sure-Footed": "The goat has advantage on Strength and Dexterity saving throws made against effects that would knock it prone."
+    },
+    "actions": {
+        "Ram" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+5",
+            "onHit": "(2d4 + 3) bludgeoning damage"
+        }
+    }
+}

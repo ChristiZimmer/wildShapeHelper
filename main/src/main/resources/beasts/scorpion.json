@@ -1,0 +1,26 @@
+{
+    "name": "Scorpion",
+    "cr": 0,
+    "size": "tiny",
+    "habitat": "desert,warm,underground",
+    "goodFor": "darkness",
+    "hp": "1 (1d4-1)",
+    "ac": 11,
+    "walkingSpeed": 10,
+    "strength": 2,
+    "dexterity": 11,
+    "constitution": 8,
+    "intelligence": 1,
+    "wisdom": 8,
+    "charisma": 2,
+    "senses": "Blindsight 10 Ft., passive Perception 9",
+    "actions": {
+        "Sting" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+2",
+            "onHit": "(1d1) piercing damage, and the target must make a DC 9 Constitution saving throw, taking (1d8) poison damage on a failed save, or half as much damage on a successful one."
+        }
+    }
+}

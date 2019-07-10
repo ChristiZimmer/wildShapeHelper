@@ -19,16 +19,16 @@
         "Bite" : {
             "type": "melee",
             "reach": "5 ft",
-            "target": "one",
+            "target": "one target",
             "toHit": "+4",
-            "onHit": " (1d6 + 2) piercing damage"
+            "onHit": "(1d6 + 2) piercing damage"
         },
         "Constrict" : {
             "type": "melee",
             "reach": "5 ft",
-            "target": "one",
+            "target": "one target",
             "toHit": "+4",
-            "onHit": "(1d8 + 2) bludgeoning damage. The target is grappled (escape dc 14) Until this grapple ends, the creature is restrained, and the snake can't constrict another target"
+            "onHit": "(1d8 + 2) bludgeoning damage. The target is grappled (escape DC 14) Until this grapple ends, the creature is restrained, and the snake can't constrict another target"
         }
     }
 }

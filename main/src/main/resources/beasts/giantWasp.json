@@ -1,0 +1,28 @@
+{
+    "name": "Giant Wasp",
+    "cr": 0.5,
+    "size": "medium",
+    "habitat": "forest",
+    "goodFor": "combat,flying,swimming,speed",
+    "hp": "13 (3d8)",
+    "ac": 12,
+    "walkingSpeed": 10,
+    "swimmingSpeed": 50,
+    "flyingSpeed": 50,
+    "strength": 10,
+    "dexterity": 14,
+    "constitution": 10,
+    "intelligence": 1,
+    "wisdom": 10,
+    "charisma": 3,
+    "senses": "passive Perception 10",
+    "actions": {
+        "Sting" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+4",
+            "onHit": "(1d6 + 2) piercing damage, and the target must make a DC 11 Constitution saving throw, taking (3d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 Hit Points, the target is stable but Poisoned for 1 hour, even after regaining Hit Points, and is Paralyzed while Poisoned in this way."
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "name": "War Horse",
+    "cr": 0.5,
+    "size": "large",
+    "habitat": "plains,urban",
+    "goodFor": "transport,speed",
+    "hp": "19 (3d10+3)",
+    "ac": 11,
+    "walkingSpeed": 60,
+    "strength": 18,
+    "dexterity": 12,
+    "constitution": 13,
+    "intelligence": 2,
+    "wisdom": 12,
+    "charisma": 7,
+    "senses": "passive Perception 11",
+    "specialAbilities": {
+        "Trampling Charge": "If the horse moves at least 20 ft. straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the horse can make another attack with its hooves against it as a bonus action."
+    },
+    "actions": {
+        "Hooves" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+6",
+            "onHit": "(2d6 + 4) bludgeoning damage"
+        }
+    }
+}

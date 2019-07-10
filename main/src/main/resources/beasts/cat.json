@@ -3,7 +3,7 @@
     "cr": 0,
     "size": "tiny",
     "habitat": "plains,urban",
-    "goodFor": "climbing,stealth",
+    "goodFor": "climbing,stealth,smelling",
     "hp": "2 (1d4)",
     "ac": 12,
     "walkingSpeed": 40,
@@ -23,7 +23,7 @@
         "Claws" : {
             "type": "melee",
             "reach": "5 ft",
-            "target": "one",
+            "target": "one target",
             "toHit": "+0",
             "onHit": "(1d1) slashing damage"
         }

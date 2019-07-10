@@ -1,0 +1,30 @@
+{
+    "name": "Hyena",
+    "cr": 0,
+    "size": "medium",
+    "habitat": "desert",
+    "goodFor": "combat,speed",
+    "hp": "5 (1d8+1)",
+    "ac": 11,
+    "walkingSpeed": 50,
+    "strength": 11,
+    "dexterity": 13,
+    "constitution": 12,
+    "intelligence": 2,
+    "wisdom": 12,
+    "charisma": 5,
+    "skills": "Perception +3",
+    "senses": "passive Perception 13",
+    "specialAbilities": {
+        "Pack Tactics": "The hyena has advantage on an attack roll against a creature if at least one of the hyena's allies is within 5 ft. of the creature and the ally isn't incapacitated."
+    },
+    "actions": {
+        "Bite" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+2",
+            "onHit": "(1d6) piercing damage"
+        }
+    }
+}

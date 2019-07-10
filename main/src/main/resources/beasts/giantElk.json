@@ -1,0 +1,36 @@
+{
+    "name": "Giant Elk",
+    "cr": 2,
+    "size": "huge",
+    "habitat": "forest,hills,mountains",
+    "goodFor": "combat,speed",
+    "hp": "42 (5d12+10)",
+    "ac": 14,
+    "walkingSpeed": 60,
+    "strength": 19,
+    "dexterity": 16,
+    "constitution": 14,
+    "intelligence": 7,
+    "wisdom": 14,
+    "charisma": 10,
+    "senses": "passive Perception 14",
+    "specialAbilities": {
+        "Charge": "If the elk moves at least 20 ft. straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra (2d6) damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone."
+    },
+    "actions": {
+        "Ram" : {
+            "type": "melee",
+            "reach": "10 ft",
+            "target": "one target",
+            "toHit": "+6",
+            "onHit": "(2d6 + 4) bludgeoning damage. "
+        },
+        "Hooves" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one prone creature",
+            "toHit": "+6",
+            "onHit": "(4d8 + 4) bludgeoning damage."
+        }
+    }
+}

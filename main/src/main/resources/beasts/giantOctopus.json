@@ -1,0 +1,36 @@
+{
+    "name": "Giant Octopus",
+    "cr": 1,
+    "size": "large",
+    "habitat": "aquatic",
+    "goodFor": "combat,swimming,stealth,darkness",
+    "hp": "52 (8d10+8)",
+    "ac": 11,
+    "walkingSpeed": 10,
+    "swimmingSpeed": 60,
+    "strength": 17,
+    "dexterity": 13,
+    "constitution": 13,
+    "intelligence": 4,
+    "wisdom": 10,
+    "charisma": 4,
+    "skills": "Perception +4, Stealth +5",
+    "senses": "Darkvision 60 Ft., passive Perception 14",
+    "specialAbilities": {
+        "Hold Breath": "While out of water, the octopus can hold its breath for 1 hour.",
+        "Underwater Camouflage": "The octopus has advantage on Dexterity (Stealth) checks made while underwater.",
+        "Water Breathing": "The octopus can breathe only underwater."
+    },
+    "actions": {
+        "Tentacles" : {
+            "type": "melee",
+            "reach": "15 ft",
+            "target": "one target",
+            "toHit": "+5",
+            "onHit": "(2d6 + 3) bludgeoning damage. If the target is a creature, it is grappled (escape DC 16). Until this grapple ends, the target is restrained, and the octopus can't use its tentacles on another target"
+        },
+        "Ink Cloud" : {
+            "desc": "(Recharges after a Short or Long Rest) A 20-foot-radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink, the octopus can use the Dash action as a bonus action."
+        }
+    }
+}

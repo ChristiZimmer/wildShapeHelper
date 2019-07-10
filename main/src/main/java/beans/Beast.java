@@ -11,13 +11,15 @@ public class Beast {
     private String name;
     private double cr;
     private String size;
+    private boolean extinct;
+    private boolean swarm;
     private String[] habitat;
     private String[] goodFor;
     private String hp;
     private int ac;
     private int walkingSpeed;
     private int swimmingSpeed;
-    private  int flyingSpeed;
+    private int flyingSpeed;
     private int climbingSpeed;
     private int burrow;
     private int strength;
@@ -27,19 +29,25 @@ public class Beast {
     private int wisdom;
     private int charisma;
     private String skills;
-    private  String senses;
-    private  String damageImmunities;
+    private String senses;
+    private String languages;
+    private String damageResistance;
+    private String damageImmunities;
+    private String conditionResistance;
     private String conditionImmunities;
     private Map<String, String> specialAbilities;
     private List<Attack> actions;
 
-    public Beast(String name, double cr, String size, String[] habitat, String[] goodFor, String hp, int ac,
+    public Beast(String name, double cr, String size, boolean extinct, boolean swarm, String[] habitat, String[] goodFor, String hp, int ac,
                  int walkingSpeed, int swimmingSpeed, int flyingSpeed, int climbingSpeed, int burrow, int strength, int dexterity,
-                 int constitution, int intelligence, int wisdom, int charisma, String skills, String senses, String damageImmunities,
-                 String conditionImmunities, Map<String, String> specialAbilities, List<Attack> actions) {
+                 int constitution, int intelligence, int wisdom, int charisma, String skills, String senses, String languages,
+                 String damageResistance, String damageImmunities, String conditionResistance, String conditionImmunities,
+                 Map<String, String> specialAbilities, List<Attack> actions) {
         this.name = name;
         this.cr = cr;
         this.size = size;
+        this.extinct = extinct;
+        this.swarm = swarm;
         this.habitat = habitat;
         this.goodFor = goodFor;
         this.hp = hp;
@@ -57,7 +65,10 @@ public class Beast {
         this.charisma = charisma;
         this.skills = skills;
         this.senses = senses;
+        this.languages = languages;
+        this.damageResistance = damageResistance;
         this.damageImmunities = damageImmunities;
+        this.conditionResistance = conditionResistance;
         this.conditionImmunities = conditionImmunities;
         this.specialAbilities = specialAbilities;
         this.actions = actions;
@@ -85,6 +96,22 @@ public class Beast {
 
     public void setSize(String size) {
         this.size = size;
+    }
+
+    public boolean isExtinct() {
+        return extinct;
+    }
+
+    public void setExtinct(boolean extinct) {
+        this.extinct = extinct;
+    }
+
+    public boolean isSwarm() {
+        return swarm;
+    }
+
+    public void setSwarm(boolean swarm) {
+        this.swarm = swarm;
     }
 
     public String[] getHabitat() {
@@ -223,12 +250,36 @@ public class Beast {
         this.senses = senses;
     }
 
+    public String getLanguages() {
+        return languages;
+    }
+
+    public void setLanguages(String languages) {
+        this.languages = languages;
+    }
+
+    public String getDamageResistance() {
+        return damageResistance;
+    }
+
+    public void setDamageResistance(String damageResistance) {
+        this.damageResistance = damageResistance;
+    }
+
     public String getDamageImmunities() {
         return damageImmunities;
     }
 
     public void setDamageImmunities(String damageImmunities) {
         this.damageImmunities = damageImmunities;
+    }
+
+    public String getConditionResistance() {
+        return conditionResistance;
+    }
+
+    public void setConditionResistance(String conditionResistance) {
+        this.conditionResistance = conditionResistance;
     }
 
     public String getConditionImmunities() {

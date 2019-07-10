@@ -3,7 +3,7 @@
     "cr": 1,
     "size": "large",
     "habitat": "forest",
-    "goodFor": "combat,speed,stealth",
+    "goodFor": "combat,speed,stealth,hearing,smelling",
     "hp": "37 (5d10+10)",
     "ac": 14,
     "walkingSpeed": 50,
@@ -23,7 +23,7 @@
         "Bite" : {
             "type": "melee",
             "reach": "5 ft",
-            "target": "one",
+            "target": "one target",
             "toHit": "+5",
             "onHit": "(2d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone"
         }

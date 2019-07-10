@@ -1,0 +1,30 @@
+{
+    "name": "Weasel",
+    "cr": 0,
+    "size": "tiny",
+    "habitat": "hills",
+    "goodFor": "stealth,hearing,smelling",
+    "hp": "1 (1d4-1)",
+    "ac": 13,
+    "walkingSpeed": 30,
+    "strength": 3,
+    "dexterity": 16,
+    "constitution": 8,
+    "intelligence": 2,
+    "wisdom": 12,
+    "charisma": 3,
+    "skills": "Perception +3, Stealth +5",
+    "senses": "passive Perception 13",
+    "specialAbilities": {
+        "Keen Hearing and Smell": "The weasel has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+    },
+    "actions": {
+        "Bite" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+5",
+            "onHit": "(1d1) piercing damage"
+        }
+    }
+}

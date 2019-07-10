@@ -1,0 +1,26 @@
+{
+    "name": "Riding Horse",
+    "cr": 0.25,
+    "size": "large",
+    "habitat": "plains,urban",
+    "goodFor": "transport,speed",
+    "hp": "13 (2d10+2)",
+    "ac": 10,
+    "walkingSpeed": 60,
+    "strength": 16,
+    "dexterity": 10,
+    "constitution": 12,
+    "intelligence": 2,
+    "wisdom": 11,
+    "charisma": 7,
+    "senses": "passive Perception 10",
+    "actions": {
+        "Hooves" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+5",
+            "onHit": "(2d4 + 3) bludgeoning damage"
+        }
+    }
+}

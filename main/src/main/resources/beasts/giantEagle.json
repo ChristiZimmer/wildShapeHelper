@@ -1,0 +1,42 @@
+{
+    "name": "Giant Eagle",
+    "cr": 1,
+    "size": "large",
+    "habitat": "forest,hills,plains,mountains",
+    "goodFor": "flying,speed,combat,seeing",
+    "hp": "26 (4d10+4)",
+    "ac": 13,
+    "walkingSpeed": 10,
+    "flyingSpeed": 80,
+    "strength": 16,
+    "dexterity": 17,
+    "constitution": 13,
+    "intelligence": 8,
+    "wisdom": 14,
+    "charisma": 10,
+    "skills": "Perception +4",
+    "senses": "passive Perception 14",
+    "languages": "Giant Eagle, Understands Common And Auran But Can't Speak",
+    "specialAbilities": {
+        "Keen Sight": "The eagle has advantage on Wisdom (Perception) checks that rely on sight."
+    },
+    "actions": {
+        "Multiattack": {
+            "desc": "The eagle makes two attacks: one with its beak and one with its talons."
+        },
+        "Beak" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+5",
+            "onHit": "(1d6 + 3) piercing damage"
+        },
+        "Talons" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+5",
+            "onHit": "(2d6 + 3) slashing damage"
+        }
+    }
+}

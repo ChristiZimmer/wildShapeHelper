@@ -1,0 +1,37 @@
+{
+    "name": "Triceratops",
+    "cr": 5,
+    "size": "huge",
+    "extinct": true,
+    "habitat": "forest,hills,plains",
+    "goodFor": "combat,speed",
+    "hp": "95 (10d12+30)",
+    "ac": 13,
+    "walkingSpeed": 50,
+    "strength": 22,
+    "dexterity": 9,
+    "constitution": 17,
+    "intelligence": 2,
+    "wisdom": 11,
+    "charisma": 5,
+    "senses": "passive Perception 10",
+    "specialAbilities": {
+        "Trampling Charge": "If the triceratops moves at least 20 ft. straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the triceratops can make one stomp attack against it as a bonus action."
+    },
+    "actions": {
+        "Gore" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+9",
+            "onHit": "(4d8 + 6) piercing damage"
+        },
+        "Stomp" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one prone creature",
+            "toHit": "+9",
+            "onHit": "(3d10 + 6) bludgeoning damage"
+        }
+    }
+}

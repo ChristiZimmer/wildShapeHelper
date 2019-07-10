@@ -1,0 +1,27 @@
+{
+    "name": "Giant Centipede",
+    "cr": 1,
+    "size": "small",
+    "habitat": "any",
+    "goodFor": "darkness,climbing,poison",
+    "hp": "4 (1d6+1)",
+    "ac": 13,
+    "walkingSpeed": 30,
+    "climbingSpeed": 30,
+    "strength": 5,
+    "dexterity": 14,
+    "constitution": 12,
+    "intelligence": 1,
+    "wisdom": 7,
+    "charisma": 3,
+    "senses": "Blindsight 30 Ft., passive Perception 8",
+    "actions": {
+        "Bite" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+4",
+            "onHit": "(1d4 + 2) piercing damage plus (3d6)poison damage. The target must succeed on a DC 11 Constitution saving throw or take 10 (3d6) poison damage. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way"
+        }
+    }
+}

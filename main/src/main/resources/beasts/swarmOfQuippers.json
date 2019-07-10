@@ -1,0 +1,41 @@
+{
+    "name": "Swarm of Quippers",
+    "cr": 1,
+    "size": "Medium swarm of tiny beasts",
+    "swarm": true,
+    "habitat": "aquatic",
+    "goodFor": "swimming,darkness,swarm",
+    "hp": "28 (8d8-8)",
+    "ac": 13,
+    "swimmingSpeed": 40,
+    "strength": 13,
+    "dexterity": 16,
+    "constitution": 9,
+    "intelligence": 1,
+    "wisdom": 7,
+    "charisma": 2,
+    "senses": "Darkvision 60 Ft., passive Perception 8",
+    "damageResistance": "Bludgeoning,Piercing,Slashing",
+    "conditionImmunities": "Charmed,Frightened,Grappled,Paralyzed,Petrified,Prone,Restrained,Stunned",
+    "specialAbilities": {
+        "Blood Frenzy": "The quipper has advantage on melee attack rolls against any creature that doesn't have all its hit points.",
+        "Water Breathing": "The quipper can breathe only underwater.",
+        "Swarm": "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny quipper. The swarm can't regain hit points or gain temporary hit points."
+    },
+    "actions": {
+        "Bites (swarm has more than half HP)" : {
+            "type": "melee",
+            "reach": "0 ft",
+            "target": "one creature in the swarm's space",
+            "toHit": "+5",
+            "onHit": "(4d6) piercing damage"
+        },
+        "Bites (swarm has less than half HP)" : {
+            "type": "melee",
+            "reach": "0 ft",
+            "target": "one creature in the swarm's space",
+            "toHit": "+5",
+            "onHit": "(2d6) piercing damage"
+        }
+    }
+}

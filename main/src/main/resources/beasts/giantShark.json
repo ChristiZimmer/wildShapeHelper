@@ -1,0 +1,32 @@
+{
+    "name": "Giant Shark",
+    "cr": 5,
+    "size": "huge",
+    "habitat": "aquatic",
+    "goodFor": "combat,swimming,speed,darkness",
+    "hp": "126 (11d12+55)",
+    "ac": 13,
+    "walkingSpeed": 0,
+    "swimmingSpeed": 50,
+    "strength": 23,
+    "dexterity": 11,
+    "constitution": 21,
+    "intelligence": 1,
+    "wisdom": 10,
+    "charisma": 5,
+    "skills": "Perception +3",
+    "senses": "Blindsight 60 Ft., passive Perception 13",
+    "specialAbilities": {
+        "Blood Frenzy": "The shark has advantage on melee attack rolls against any creature that doesn't have all its hit points.",
+        "Water Breathing": "The shark can breathe only underwater"
+    },
+    "actions": {
+        "Bite" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+9",
+            "onHit": "(3d10 + 6) piercing damage"
+        }
+    }
+}

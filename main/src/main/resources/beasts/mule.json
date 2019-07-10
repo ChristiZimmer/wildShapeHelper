@@ -1,0 +1,30 @@
+{
+    "name": "Mule",
+    "cr": 0.125,
+    "size": "medium",
+    "habitat": "urban,plains",
+    "goodFor": "transport",
+    "hp": "11 (2d8+2)",
+    "ac": 10,
+    "walkingSpeed": 40,
+    "strength": 14,
+    "dexterity": 10,
+    "constitution": 13,
+    "intelligence": 2,
+    "wisdom": 10,
+    "charisma": 5,
+    "senses": "passive Perception 10",
+    "specialAbilities": {
+        "Beast of Burden": "The mule is considered to be a Large animal for the purpose of determining its carrying capacity.",
+        "Sure-Footed": "The mule has advantage on Strength and Dexterity saving throws made against effects that would knock it prone."
+    },
+    "actions": {
+        "Hooves" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+5",
+            "onHit": "(1d6 + 3) bludgeoning damage"
+        }
+    }
+}

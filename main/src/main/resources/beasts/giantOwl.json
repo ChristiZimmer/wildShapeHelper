@@ -1,0 +1,33 @@
+{
+    "name": "Giant Owl",
+    "cr": 0.25,
+    "size": "large",
+    "habitat": "forest",
+    "goodFor": "combat,flying,darkness,stealth,hearing,seeing",
+    "hp": "19 (3d10+3)",
+    "ac": 12,
+    "walkingSpeed": 5,
+    "flyingSpeed": 60,
+    "strength": 13,
+    "dexterity": 15,
+    "constitution": 12,
+    "intelligence": 8,
+    "wisdom": 13,
+    "charisma": 10,
+    "skills": "Perception +5, Stealth +4",
+    "senses": "Darkvision 120 Ft., passive Perception 15",
+    "languages": "Giant Owl, Understands Common, Elvish, And Sylvan But Can't Speak",
+    "specialAbilities": {
+        "Flyby": "The owl doesn't provoke opportunity attacks when it flies out of an enemy's reach.",
+        "Keen Hearing and Sight": "The owl has advantage on Wisdom (Perception) checks that rely on hearing or sight."
+    },
+    "actions": {
+        "Talons" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+3",
+            "onHit": "(2d6 + 1) slashing damage"
+        }
+    }
+}

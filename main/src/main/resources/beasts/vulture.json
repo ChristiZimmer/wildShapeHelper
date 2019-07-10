@@ -1,0 +1,32 @@
+{
+    "name": "Vulture",
+    "cr": 0,
+    "size": "medium",
+    "habitat": "plains,mountains,urban",
+    "goodFor": "combat,flying,seeing,smelling",
+    "hp": "5 (1d8+1)",
+    "ac": 10,
+    "walkingSpeed": 10,
+    "flyingSpeed": 50,
+    "strength": 7,
+    "dexterity": 10,
+    "constitution": 13,
+    "intelligence": 2,
+    "wisdom": 12,
+    "charisma": 4,
+    "skills": "Perception +3",
+    "senses": "passive Perception 13",
+    "specialAbilities": {
+        "Keen Sight and Smell": "The vulture has advantage on Wisdom (Perception) checks that rely on sight or smell.",
+        "Pack Tactics": "The vulture has advantage on an attack roll against a creature if at least one of the vulture's allies is within 5 ft. of the creature and the ally isn't incapacitated."
+    },
+    "actions": {
+        "Beak" : {
+            "type": "melee",
+            "reach": "5 ft",
+            "target": "one target",
+            "toHit": "+2",
+            "onHit": "(1d4) piercing damage"
+        }
+    }
+}
