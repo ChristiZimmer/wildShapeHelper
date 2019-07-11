@@ -1,0 +1,161 @@
+<h3>Beasts</h3>
+<form>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-addon"><i class="fa fa-search"></i></div>
+            <input type="text" class="form-control" placeholder="Search" ng-model="searchBeasts">
+        </div>
+    </div>
+</form>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <td>
+            <a href="#viewBeasts" ng-click="sortType = 'name'; sortReverse = !sortReverse">
+                Name
+                <span ng-show="sortType == 'name' && !sortReverse" class="fa fa-caret-down"></span>
+                <span ng-show="sortType == 'name' && sortReverse" class="fa fa-caret-up"></span>
+            </a>
+        </td>
+        <td>
+            <a href="#viewBeasts" ng-click="sortType = 'cr'; sortReverse = !sortReverse">
+                CR
+                <span ng-show="sortType == 'cr' && !sortReverse" class="fa fa-caret-down"></span>
+                <span ng-show="sortType == 'cr' && sortReverse" class="fa fa-caret-up"></span>
+            </a>
+        </td>
+
+        <td>
+            <a href="#viewBeasts" ng-click="sortType = 'size'; sortReverse = !sortReverse">
+                Size
+                <span ng-show="sortType == 'size' && !sortReverse" class="fa fa-caret-down"></span>
+                <span ng-show="sortType == 'size' && sortReverse" class="fa fa-caret-up"></span>
+            </a>
+        </td>
+
+        <td>
+            <a href="#viewBeasts" ng-click="sortType = 'hp'; sortReverse = !sortReverse">
+                HP
+                <span ng-show="sortType == 'hp' && !sortReverse" class="fa fa-caret-down"></span>
+                <span ng-show="sortType == 'hp' && sortReverse" class="fa fa-caret-up"></span>
+            </a>
+        </td>
+
+        <td>
+            <a href="#viewBeasts" ng-click="sortType = 'ac'; sortReverse = !sortReverse">
+                AC
+                <span ng-show="sortType == 'ac' && !sortReverse" class="fa fa-caret-down"></span>
+                <span ng-show="sortType == 'ac' && sortReverse" class="fa fa-caret-up"></span>
+            </a>
+        </td>
+
+        <td>
+            <a href="#viewBeasts" ng-click="sortType = 'walkingSpeed'; sortReverse = !sortReverse">
+                Speed
+                <span ng-show="sortType == 'walkingSpeed' && !sortReverse" class="fa fa-caret-down"></span>
+                <span ng-show="sortType == 'walkingSpeed' && sortReverse" class="fa fa-caret-up"></span>
+            </a>
+        </td>
+
+        <td>
+            <a href="#viewBeasts" ng-click="sortType = 'swimmingSpeed'; sortReverse = !sortReverse">
+                Swimming Speed
+                <span ng-show="sortType == 'swimmingSpeed' && !sortReverse" class="fa fa-caret-down"></span>
+                <span ng-show="sortType == 'swimmingSpeed' && sortReverse" class="fa fa-caret-up"></span>
+            </a>
+        </td>
+
+        <td>
+            <a href="#viewBeasts" ng-click="sortType = 'flyingSpeed'; sortReverse = !sortReverse">
+                Flying Speed
+                <span ng-show="sortType == 'flyingSpeed' && !sortReverse" class="fa fa-caret-down"></span>
+                <span ng-show="sortType == 'flyingSpeed' && sortReverse" class="fa fa-caret-up"></span>
+            </a>
+        </td>
+
+        <td>
+            <a href="#viewBeasts" ng-click="sortType = 'climbingSpeed'; sortReverse = !sortReverse">
+                Climbing Speed
+                <span ng-show="sortType == 'climbingSpeed' && !sortReverse" class="fa fa-caret-down"></span>
+                <span ng-show="sortType == 'climbingSpeed' && sortReverse" class="fa fa-caret-up"></span>
+            </a>
+        </td>
+
+        <td>
+            <a href="#viewBeasts" ng-click="sortType = 'burrow'; sortReverse = !sortReverse">
+                Burrowing Speed
+                <span ng-show="sortType == 'burrow' && !sortReverse" class="fa fa-caret-down"></span>
+                <span ng-show="sortType == 'burrow' && sortReverse" class="fa fa-caret-up"></span>
+            </a>
+        </td>
+
+        <td>
+            <a href="#viewBeasts" ng-click="sortType = 'strength'; sortReverse = !sortReverse">
+                STR
+                <span ng-show="sortType == 'strength' && !sortReverse" class="fa fa-caret-down"></span>
+                <span ng-show="sortType == 'strength' && sortReverse" class="fa fa-caret-up"></span>
+            </a>
+        </td>
+
+        <td>
+            <a href="#viewBeasts" ng-click="sortType = 'dexterity'; sortReverse = !sortReverse">
+                DEX
+                <span ng-show="sortType == 'dexterity' && !sortReverse" class="fa fa-caret-down"></span>
+                <span ng-show="sortType == 'dexterity' && sortReverse" class="fa fa-caret-up"></span>
+            </a>
+        </td>
+
+        <td>
+            <a href="#viewBeasts" ng-click="sortType = 'constitution'; sortReverse = !sortReverse">
+                CON
+                <span ng-show="sortType == 'constitution' && !sortReverse" class="fa fa-caret-down"></span>
+                <span ng-show="sortType == 'constitution' && sortReverse" class="fa fa-caret-up"></span>
+            </a>
+        </td>
+
+        <td>
+            <a href="#viewBeasts" ng-click="sortType = 'intelligence'; sortReverse = !sortReverse">
+                INT
+                <span ng-show="sortType == 'intelligence' && !sortReverse" class="fa fa-caret-down"></span>
+                <span ng-show="sortType == 'intelligence' && sortReverse" class="fa fa-caret-up"></span>
+            </a>
+        </td>
+
+        <td>
+            <a href="#viewBeasts" ng-click="sortType = 'wisdom'; sortReverse = !sortReverse">
+                WIS
+                <span ng-show="sortType == 'wisdom' && !sortReverse" class="fa fa-caret-down"></span>
+                <span ng-show="sortType == 'wisdom' && sortReverse" class="fa fa-caret-up"></span>
+            </a>
+        </td>
+
+        <td>
+            <a href="#viewBeasts" ng-click="sortType = 'charisma'; sortReverse = !sortReverse">
+                CHA
+                <span ng-show="sortType == 'charisma' && !sortReverse" class="fa fa-caret-down"></span>
+                <span ng-show="sortType == 'charisma' && sortReverse" class="fa fa-caret-up"></span>
+            </a>
+        </td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="beast in beasts | orderBy:sortType:sortReverse | filter:searchBeasts">
+        <td>{{ beast.name }}</td>
+        <td>{{ beast.cr }}</td>
+        <td>{{ beast.size }}</td>
+        <td>{{ beast.hp }}</td>
+        <td>{{ beast.ac }}</td>
+        <td>{{ beast.walkingSpeed }}</td>
+        <td>{{ beast.swimmingSpeed }}</td>
+        <td>{{ beast.flyingSpeed }}</td>
+        <td>{{ beast.climbingSpeed }}</td>
+        <td>{{ beast.burrow }}</td>
+        <td>{{ beast.strength }}</td>
+        <td>{{ beast.dexterity }}</td>
+        <td>{{ beast.constitution }}</td>
+        <td>{{ beast.intelligence }}</td>
+        <td>{{ beast.wisdom }}</td>
+        <td>{{ beast.charisma }}</td>
+    </tr>
+    </tbody>
+</table>

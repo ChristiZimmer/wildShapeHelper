@@ -1,7 +1,7 @@
 package beans;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import helpers.BeastDeserializer;
+import deserializers.BeastDeserializer;
 
 import java.util.List;
 import java.util.Map;

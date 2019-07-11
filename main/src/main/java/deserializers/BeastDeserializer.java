@@ -1,4 +1,4 @@
-package helpers;
+package deserializers;
 
 import beans.Attack;
 import beans.Beast;

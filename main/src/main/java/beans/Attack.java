@@ -1,7 +1,7 @@
 package beans;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import helpers.AttackDeserializer;
+import deserializers.AttackDeserializer;
 
 @JsonDeserialize(using = AttackDeserializer.class)
 public class Attack {
