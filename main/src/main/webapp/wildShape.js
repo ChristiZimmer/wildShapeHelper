@@ -35,6 +35,189 @@ angular.module("wildApp")
 		}).then(function(response) {
 			$scope.beasts = response.data;
 		});
+		$scope.selBeast = function(beast) {
+            $scope.selected_beast = beast;
+            angular.element('#myModal').modal();
+        }
+		$scope.getBeastSpeed = function (beastWalkingSpeed, beastSwimmingSpeed, beastFlyingSpeed, beastClimbingSpeed, beastBurrow ){
+            var speed = "";
+            if(beastWalkingSpeed > 0){
+                speed += beastWalkingSpeed + " ft,"
+            }
+            if(beastSwimmingSpeed > 0){
+                speed += "swim " + beastSwimmingSpeed + " ft,"
+            }
+            if(beastFlyingSpeed > 0){
+                speed += "fly " + beastFlyingSpeed + " ft,"
+            }
+            if(beastClimbingSpeed > 0){
+                speed += "climb " + beastClimbingSpeed + " ft,"
+            }
+            if(beastBurrow > 0){
+                speed += "burrow " + beastBurrow + " ft,"
+            }
+            return speed.substring(0, speed.length - 1);
+        }
+        $scope.getAttrWithMod = function (attribute){
+            if(attribute < 10){
+                return attribute + " (-" + Math.ceil((10-attribute)/2) + ")";
+            }
+            return attribute + " (+" + Math.floor((attribute-10)/2) + ")";
+        }
+        $scope.getBeastInfoHtml = function (){
+            if($scope.selected_beast != null){
+                var infoPanel = document.createElement("div");
+
+                if($scope.selected_beast.savingThrows != null){
+                    var b = document.createElement("b");
+                    var node = document.createTextNode("Saving Throws: ");
+                    b.appendChild(node);
+                    infoPanel.appendChild(b);
+                    var t = document.createTextNode($scope.selected_beast.savingThrows);
+                    infoPanel.appendChild(t);
+                    infoPanel.appendChild(document.createElement("br"));
+                }
+                if($scope.selected_beast.skills != null){
+                    var b = document.createElement("b");
+                    var node = document.createTextNode("Skills: ");
+                    b.appendChild(node);
+                    infoPanel.appendChild(b);
+                    var t = document.createTextNode($scope.selected_beast.skills);
+                    infoPanel.appendChild(t);
+                    infoPanel.appendChild(document.createElement("br"));
+                }
+                if($scope.selected_beast.damageResistance != null){
+                    var b = document.createElement("b");
+                    var node = document.createTextNode("Damage Resistance: ");
+                    b.appendChild(node);
+                    infoPanel.appendChild(b);
+                    var t = document.createTextNode($scope.selected_beast.damageResistance);
+                    infoPanel.appendChild(t);
+                    infoPanel.appendChild(document.createElement("br"));
+                }
+                if($scope.selected_beast.conditionResistance != null){
+                    var b = document.createElement("b");
+                    var node = document.createTextNode("Condition Resistance: ");
+                    b.appendChild(node);
+                    infoPanel.appendChild(b);
+                    var t = document.createTextNode($scope.selected_beast.conditionResistance);
+                    infoPanel.appendChild(t);
+                    infoPanel.appendChild(document.createElement("br"));
+                }
+                if($scope.selected_beast.damageImmunities != null){
+                    var t = document.createElement("b");
+                    var node = document.createTextNode("Damage Immunities: ");
+                    b.appendChild(node);
+                    infoPanel.appendChild(b);
+                    var b = document.createTextNode($scope.selected_beast.damageImmunities);
+                    infoPanel.appendChild(t);
+                    infoPanel.appendChild(document.createElement("br"));
+                }
+                if($scope.selected_beast.conditionImmunities != null){
+                    var b = document.createElement("b");
+                    var node = document.createTextNode("Condition Immunities: ");
+                    b.appendChild(node);
+                    infoPanel.appendChild(b);
+                    var t = document.createTextNode($scope.selected_beast.conditionImmunities);
+                    infoPanel.appendChild(t);
+                    infoPanel.appendChild(document.createElement("br"));
+                }
+                if($scope.selected_beast.senses != null){
+                    var b = document.createElement("b");
+                    var node = document.createTextNode("Senses: ");
+                    b.appendChild(node);
+                    infoPanel.appendChild(b);
+                    var t = document.createTextNode($scope.selected_beast.senses);
+                    infoPanel.appendChild(t);
+                    infoPanel.appendChild(document.createElement("br"));
+                }
+                if($scope.selected_beast.languages != null){
+                    var b = document.createElement("b");
+                    var node = document.createTextNode("Languages: ");
+                    b.appendChild(node);
+                    infoPanel.appendChild(b);
+                    var t = document.createTextNode($scope.selected_beast.languages);
+                    infoPanel.appendChild(t);
+                    infoPanel.appendChild(document.createElement("br"));
+                }
+                if($scope.selected_beast.cr != null){
+                    var b = document.createElement("b");
+                    var node = document.createTextNode("Challenge: ");
+                    b.appendChild(node);
+                    infoPanel.appendChild(b);
+                    var t = document.createTextNode($scope.selected_beast.cr);
+                    infoPanel.appendChild(t);
+                    infoPanel.appendChild(document.createElement("br"));
+                }
+
+                document.getElementById("beastInfoPanel").firstChild.remove();
+                document.getElementById("beastInfoPanel").appendChild(infoPanel);
+            }
+        }
+        $scope.getBeastSpecialAbilitiesHtml = function (){
+            if($scope.selected_beast != null){
+                var abilityPanel = document.createElement("div");
+
+                for(key in $scope.selected_beast.specialAbilities){
+                    var b = document.createElement("b");
+                    var node = document.createTextNode(key + ": ");
+                    b.appendChild(node);
+                    abilityPanel.appendChild(b);
+                    var t = document.createTextNode($scope.selected_beast.specialAbilities[key]);
+                    abilityPanel.appendChild(t);
+                    abilityPanel.appendChild(document.createElement("br"));
+                }
+
+                document.getElementById("specialAbilitiesPanel").firstChild.remove();
+                document.getElementById("specialAbilitiesPanel").appendChild(abilityPanel);
+            }
+        }
+        $scope.getBeastActionsHtml = function (){
+            if($scope.selected_beast != null){
+                var actionPanel = document.createElement("div");
+
+                for(key in $scope.selected_beast.actions){
+                    var b = document.createElement("b");
+                    var node = document.createTextNode(key + ": ");
+                    b.appendChild(node);
+                    actionPanel.appendChild(b);
+
+                    var attack = $scope.selected_beast.actions[key];
+                    var str = "";
+                    if(attack.desc != null){
+                        str += attack.desc;
+                        str += ", ";
+                    }
+                    if(attack.type != null){
+                        str += attack.type;
+                        str += ", ";
+                    }
+                    if(attack.reach != null){
+                        str += attack.reach + " reach";
+                        str += ", ";
+                    }
+                    if(attack.target != null){
+                        str += attack.target;
+                        str += ", ";
+                    }
+                    if(attack.toHit != null){
+                        str += attack.toHit + " to hit";
+                        str += ", ";
+                    }
+                    if(attack.onHit != null){
+                        str += "Hit: " + attack.onHit;
+                        str += ", ";
+                    }
+
+                    var t = document.createTextNode(str.substring(0, str.length - 2));
+                    actionPanel.appendChild(t);
+                    actionPanel.appendChild(document.createElement("br"));
+                }
+
+                document.getElementById("actionsPanel").firstChild.remove();
+                document.getElementById("actionsPanel").appendChild(actionPanel);
+            }
+        }
 	});
 angular.module("wildApp")
 	.config(function($routeProvider, $locationProvider) {

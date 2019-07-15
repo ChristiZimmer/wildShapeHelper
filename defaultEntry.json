@@ -19,6 +19,7 @@
     "intelligence": 8,
     "wisdom": 12,
     "charisma": 7,
+    "savingThrows": "Str +9, Con +9, Wis +7, Cha +7",
     "skills": "Athletics +5, Perception +3",
     "senses": "passive Perception 13",
     "languages": "Understands Common And Auran But Can't Speak",

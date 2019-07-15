@@ -3,7 +3,6 @@ package beans;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import deserializers.BeastDeserializer;
 
-import java.util.List;
 import java.util.Map;
 
 @JsonDeserialize(using = BeastDeserializer.class)
@@ -28,6 +27,7 @@ public class Beast {
     private int intelligence;
     private int wisdom;
     private int charisma;
+    private String savingThrows;
     private String skills;
     private String senses;
     private String languages;
@@ -36,13 +36,13 @@ public class Beast {
     private String conditionResistance;
     private String conditionImmunities;
     private Map<String, String> specialAbilities;
-    private List<Attack> actions;
+    private Map<String, Attack> actions;
 
     public Beast(String name, double cr, String size, boolean extinct, boolean swarm, String[] habitat, String[] goodFor, String hp, int ac,
                  int walkingSpeed, int swimmingSpeed, int flyingSpeed, int climbingSpeed, int burrow, int strength, int dexterity,
-                 int constitution, int intelligence, int wisdom, int charisma, String skills, String senses, String languages,
+                 int constitution, int intelligence, int wisdom, int charisma, String savingThrows, String skills, String senses, String languages,
                  String damageResistance, String damageImmunities, String conditionResistance, String conditionImmunities,
-                 Map<String, String> specialAbilities, List<Attack> actions) {
+                 Map<String, String> specialAbilities, Map<String, Attack> actions) {
         this.name = name;
         this.cr = cr;
         this.size = size;
@@ -63,6 +63,7 @@ public class Beast {
         this.intelligence = intelligence;
         this.wisdom = wisdom;
         this.charisma = charisma;
+        this.skills = savingThrows;
         this.skills = skills;
         this.senses = senses;
         this.languages = languages;
@@ -234,6 +235,14 @@ public class Beast {
         this.charisma = charisma;
     }
 
+    public String getSavingThrows() {
+        return savingThrows;
+    }
+
+    public void setSavingThrows(String savingThrows) {
+        this.savingThrows = savingThrows;
+    }
+
     public String getSkills() {
         return skills;
     }
@@ -298,11 +307,11 @@ public class Beast {
         this.specialAbilities = specialAbilities;
     }
 
-    public List<Attack> getActions() {
+    public Map<String, Attack> getActions() {
         return actions;
     }
 
-    public void setActions(List<Attack> actions) {
+    public void setActions(Map<String, Attack> actions) {
         this.actions = actions;
     }
 }

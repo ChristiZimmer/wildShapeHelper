@@ -10,8 +10,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.deser.std.StdDeserializer;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Map;
 
 public class BeastDeserializer extends StdDeserializer<Beast> {
@@ -48,6 +46,7 @@ public class BeastDeserializer extends StdDeserializer<Beast> {
         int intelligence = node.get("intelligence").intValue();
         int wisdom = node.get("wisdom").intValue();
         int charisma = node.get("charisma").intValue();
+        String savingThrows = node.get("savingThrows") != null ? node.get("savingThrows").asText() : null;
         String skills = node.get("skills") != null ? node.get("skills").asText() : null;
         String senses = node.get("senses") != null ? node.get("senses").asText() : null;
         String languages = node.get("languages") != null ? node.get("languages").asText() : null;
@@ -58,13 +57,10 @@ public class BeastDeserializer extends StdDeserializer<Beast> {
 
         ObjectMapper objectMapper = new ObjectMapper();
         Map<String, String> specialAbilities = node.get("specialAbilities") != null ? objectMapper.convertValue(node.get("specialAbilities"), Map.class) : null;
-        List<Attack> actions = new ArrayList<>();
-        if(node.get("actions") != null) {
-            node.get("actions").forEach(e -> actions.add(objectMapper.convertValue(e, Attack.class)));
-        }
+        Map<String, Attack> actions = node.get("actions") != null ? objectMapper.convertValue(node.get("actions"), Map.class) : null;
 
         return new Beast(name, cr, size, extinct, swarm, habitat, goodFor, hp, ac, walkingSpeed, swimmingSpeed, flyingSpeed,
-                climbingSpeed, burrow, strength, dexterity, constitution, intelligence, wisdom, charisma, skills, senses,
+                climbingSpeed, burrow, strength, dexterity, constitution, intelligence, wisdom, charisma, savingThrows, skills, senses,
                 languages, damageResistance, damageImmunities, conditionResistance, conditionImmunities, specialAbilities, actions);
     }
 }

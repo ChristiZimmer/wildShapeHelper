@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+}
+
+.container.space-around {
+    width:100%;
+    justify-content: space-around;
+}
+
+div {
+    font-family: Georgia,serif;
+}
+
+.headings {
+    font-variant: small-caps;
+}
+
+a:link {
+    color: #b3ccf5;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+a:active {
+    color: white;
+}

@@ -9,8 +9,8 @@
         <input type="checkbox" ng-model="showSwarms" attribute="showSwarms">Show Beast Swarms<br>
     </div>
 </form>
-<table class="table table-bordered table-striped">
-    <thead>
+<table class="table table-bordered table-hover" id="beastInfoTable" style="padding:5%;">
+    <thead bgcolor="#254a85">
     <tr>
         <td>
             <a href="#viewBeasts" ng-click="changeSort('name')">
@@ -141,7 +141,7 @@
     </tr>
     </thead>
     <tbody>
-    <tr ng-repeat="beast in beasts | orderBy:sortType:sortReverse | filter:searchBeasts | filter:showExtinctBeasts | filter:showSwarmBeasts">
+    <tr ng-repeat="beast in beasts | orderBy:sortType:sortReverse | filter:searchBeasts | filter:showExtinctBeasts | filter:showSwarmBeasts" ng-click="selBeast(beast)">
         <td>{{ beast.name }}</td>
         <td>{{ beast.cr }}</td>
         <td>{{ beast.size }}</td>
@@ -161,3 +161,46 @@
     </tr>
     </tbody>
 </table>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="myModalLabel">
+                    <strong class="headings">{{selected_beast.name}}</strong><br>
+                    <small><i>{{selected_beast.size}} beast</i></small>
+                </h3>
+            </div>
+            <div class="modal-body">
+                <p><b>Armor Class:</b> {{selected_beast.ac}}</p>
+                <p><b>Hit Points:</b> {{selected_beast.hp}}</p>
+                <p><b>Speed:</b> {{ getBeastSpeed(selected_beast.walkingSpeed, selected_beast.swimmingSpeed, selected_beast.flyingSpeed, selected_beast.climbingSpeed, selected_beast.burrow) }}</p>
+                <hr style="border-top: 3px solid #2b65c2;" />
+                <div class="container space-around">
+                    <div><b>STR</b></div>
+                    <div><b>DEX</b></div>
+                    <div><b>CON</b></div>
+                    <div><b>INT</b></div>
+                    <div><b>WIS</b></div>
+                    <div><b>CHA</b></div>
+                </div>
+                <div class="container space-around">
+                    <div>{{ getAttrWithMod(selected_beast.strength) }}</div>
+                    <div>{{ getAttrWithMod(selected_beast.dexterity) }}</div>
+                    <div>{{ getAttrWithMod(selected_beast.constitution) }}</div>
+                    <div>{{ getAttrWithMod(selected_beast.intelligence) }}</div>
+                    <div>{{ getAttrWithMod(selected_beast.wisdom) }}</div>
+                    <div>{{ getAttrWithMod(selected_beast.charisma) }}</div>
+                </div>
+                <hr style="border-top: 3px solid #2b65c2;" />
+                <div id="beastInfoPanel">{{ getBeastInfoHtml() }}</div>
+                <hr style="border-top: 3px solid #2b65c2;" />
+                <div id="specialAbilitiesPanel">{{ getBeastSpecialAbilitiesHtml() }}</div>
+                <h4 class="headings" style="border-bottom: 1px solid #2b65c2;"><b>Actions</b></h4>
+                <div id="actionsPanel">{{ getBeastActionsHtml() }}</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
