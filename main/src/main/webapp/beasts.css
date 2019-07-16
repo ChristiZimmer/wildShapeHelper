@@ -15,18 +15,18 @@ div {
     font-variant: small-caps;
 }
 
-a:link {
+.beastTableHeader a:link {
     color: #b3ccf5;
 }
 
-a:visited {
+.beastTableHeader a:visited {
     color: white;
 }
 
-a:hover {
+.beastTableHeader a:hover {
     color: white;
 }
 
-a:active {
+.beastTableHeader a:active {
     color: white;
 }

@@ -11,7 +11,7 @@
 </form>
 <table class="table table-bordered table-hover" id="beastInfoTable" style="padding:5%;">
     <thead bgcolor="#254a85">
-    <tr>
+    <tr class="beastTableHeader">
         <td>
             <a href="#viewBeasts" ng-click="changeSort('name')">
                 Name
@@ -143,7 +143,7 @@
     <tbody>
     <tr ng-repeat="beast in beasts | orderBy:sortType:sortReverse | filter:searchBeasts | filter:showExtinctBeasts | filter:showSwarmBeasts" ng-click="selBeast(beast)">
         <td>{{ beast.name }}</td>
-        <td>{{ beast.cr }}</td>
+        <td>{{ getFraction(beast.cr) }}</td>
         <td>{{ beast.size }}</td>
         <td>{{ beast.hp }}</td>
         <td>{{ beast.ac }}</td>

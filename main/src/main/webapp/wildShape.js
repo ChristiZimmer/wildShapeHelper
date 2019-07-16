@@ -145,7 +145,7 @@ angular.module("wildApp")
                     var node = document.createTextNode("Challenge: ");
                     b.appendChild(node);
                     infoPanel.appendChild(b);
-                    var t = document.createTextNode($scope.selected_beast.cr);
+                    var t = document.createTextNode($scope.getFraction($scope.selected_beast.cr));
                     infoPanel.appendChild(t);
                     infoPanel.appendChild(document.createElement("br"));
                 }
@@ -218,6 +218,28 @@ angular.module("wildApp")
                 document.getElementById("actionsPanel").appendChild(actionPanel);
             }
         }
+        $scope.getFraction = function(number){
+            var decimal = number % 1;
+            if(decimal == 0){
+                return number;
+            }
+
+            var whole = number - decimal;
+            var den = Math.pow(10, decimal.countDecimals());
+            var num = decimal * den;
+            var g = $scope.gcd(num, den);
+            return (whole > 0 ? whole + ' ' : '') + num/g + "/" + den/g;
+        }
+        Number.prototype.countDecimals = function () {
+            if(Math.floor(this.valueOf()) === this.valueOf()) return 0;
+            return this.toString().split(".")[1].length || 0;
+        }
+        $scope.gcd = function(a, b) {
+            if (b < 0.0000001){
+                return a;
+            }
+            return $scope.gcd(b, Math.floor(a % b));
+        };
 	});
 angular.module("wildApp")
 	.config(function($routeProvider, $locationProvider) {
