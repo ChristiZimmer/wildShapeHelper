@@ -14,7 +14,6 @@ The following fields are required, all others may be omitted:
 * intelligence
 * wisdom
 * charisma
-* actions
 
 # Running locally
 ```
