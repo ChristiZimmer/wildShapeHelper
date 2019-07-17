@@ -5,8 +5,13 @@
             <div class="input-group-addon"><i class="fa fa-search"></i></div>
             <input type="text" class="form-control" placeholder="Search" ng-model="searchBeasts">
         </div>
+        <input type="checkbox" ng-model="showMaxCr" attribute="showExtinct">Enable max CR<br>
+        <select ng-show="showMaxCr" class="form-control" id='maxCrDropDown' ng-model="beastCr" ng-options="getFraction(bc) for bc in uniqueBeastCr" value="{{ bc }}" ng-change="filterCr()" size="1">
+        </select>
         <input type="checkbox" ng-model="showExtinct" attribute="showExtinct">Show Extinct Beasts<br>
         <input type="checkbox" ng-model="showSwarms" attribute="showSwarms">Show Beast Swarms<br>
+        <input type="checkbox" ng-model="showSwimming" attribute="showSwarms">Swimming Beasts<br>
+        <input type="checkbox" ng-model="showFlying" attribute="showSwarms">Flying Beasts<br>
     </div>
 </form>
 <table class="table table-bordered table-hover" id="beastInfoTable" style="padding:5%;">
@@ -141,7 +146,7 @@
     </tr>
     </thead>
     <tbody>
-    <tr ng-repeat="beast in beasts | orderBy:sortType:sortReverse | filter:searchBeasts | filter:showExtinctBeasts | filter:showSwarmBeasts" ng-click="selBeast(beast)">
+    <tr ng-repeat="beast in beasts | orderBy:sortType:sortReverse | filter:searchBeasts | filter:showExtinctBeasts | filter:showSwarmBeasts | filter:filterCr | filter:movementTypes" ng-click="selBeast(beast)">
         <td>{{ beast.name }}</td>
         <td>{{ getFraction(beast.cr) }}</td>
         <td>{{ beast.size }}</td>

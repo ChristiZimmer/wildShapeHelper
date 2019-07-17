@@ -1,11 +1,21 @@
 angular.module("wildApp", ["ngRoute"]);
 angular.module("wildApp")
-	.controller("beastsCtr", function($scope, $http) {
-        $scope.sortType = 'name'; // set the default sort type
-        $scope.sortReverse = false;  // set the default sort order
-        $scope.showExtinct = false;  // set the default sort order
-        $scope.showSwarms = false;  // set the default sort order
-        $scope.searchBeasts = ''; // set the default search/filter term
+    .controller("beastsCtr", function($scope, $http) {
+        $http({
+            method: "GET", url: "getAll.do"
+        }).then(function(response) {
+            $scope.beasts = response.data;
+            $scope.uniqueBeastCr = $scope.getUniqueCr();
+        });
+        $scope.sortType = 'name';
+        $scope.sortReverse = false;
+        $scope.showExtinct = false;
+        $scope.showSwarms = false;
+        $scope.showMaxCr = false;
+        $scope.showSwimming = true;
+        $scope.showFlying = true;
+        $scope.searchBeasts = '';
+        $scope.beastCr;
         $scope.sortMap = new Map([["name" ,false], ["cr", true], ["size", false], ["hp", true], ["ac", true], ["walkingSpeed", true],
             ["swimmingSpeed", true], ["flyingSpeed", true], ["climbingSpeed", true], ["burrow", true], ["strength", true],
             ["dexterity", true], ["constitution", true], ["intelligence", true], ["wisdom", true], ["charisma", true]]);
@@ -17,29 +27,37 @@ angular.module("wildApp")
                 $scope.sortType = sorting;
                 $scope.sortReverse = $scope.sortMap.get(sorting);
             }
-       };
-       $scope.showExtinctBeasts = function (entry) {
+        };
+        $scope.getUniqueCr = function () {
+            var uniqueCr = new Set();
+            $scope.beasts.forEach(function (b){
+                uniqueCr.add(b.cr)
+            });
+            return Array.from(uniqueCr).sort();
+        };
+        $scope.filterCr = function (entry) {
+            return entry != undefined && ($scope.showMaxCr == false || $scope.beastCr >= entry.cr);
+        };
+        $scope.movementTypes = function (entry) {
+            return ($scope.showSwimming ? true : entry.swimmingSpeed == 0) && ($scope.showFlying ? true : entry.flyingSpeed == 0);
+        };
+        $scope.showExtinctBeasts = function (entry) {
            return entry.extinct == false || entry.extinct == $scope.showExtinct;
-       };
-       $scope.showSwarmBeasts = function (entry) {
+        };
+        $scope.showSwarmBeasts = function (entry) {
            return entry.swarm == false || entry.swarm == $scope.showSwarms;
-       };
-       $scope.changeShowExtinct = function () {
+        };
+        $scope.changeShowExtinct = function () {
            $scope.showExtinct = !$scope.showExtinct;
-       };
-       $scope.changeShowSwarms = function () {
+        };
+        $scope.changeShowSwarms = function () {
            $scope.showSwarms = !$scope.showSwarms;
-       };
-		$http({
-			method: "GET", url: "getAll.do"
-		}).then(function(response) {
-			$scope.beasts = response.data;
-		});
-		$scope.selBeast = function(beast) {
+        };
+        $scope.selBeast = function(beast) {
             $scope.selected_beast = beast;
             angular.element('#myModal').modal();
         }
-		$scope.getBeastSpeed = function (beastWalkingSpeed, beastSwimmingSpeed, beastFlyingSpeed, beastClimbingSpeed, beastBurrow ){
+        $scope.getBeastSpeed = function (beastWalkingSpeed, beastSwimmingSpeed, beastFlyingSpeed, beastClimbingSpeed, beastBurrow ){
             var speed = "";
             if(beastWalkingSpeed > 0){
                 speed += beastWalkingSpeed + " ft,"
@@ -240,7 +258,7 @@ angular.module("wildApp")
             }
             return $scope.gcd(b, Math.floor(a % b));
         };
-	});
+    });
 angular.module("wildApp")
 	.config(function($routeProvider, $locationProvider) {
 		$locationProvider.hashPrefix("");
