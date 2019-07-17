@@ -28,6 +28,21 @@ angular.module("wildApp")
                 $scope.sortReverse = $scope.sortMap.get(sorting);
             }
         };
+        $scope.orderObjectBy = function(a, b) {
+            if($scope.sortType == 'hp'){
+                return $scope.convertHpToInt(a.value) < $scope.convertHpToInt(b.value) ? -1 : 1;
+            }
+
+            if (a.type !== 'string' || b.type !== 'string') {
+                return (a.value < b.value) ? -1 : 1;
+            }
+
+            return a.value.localeCompare(b.value);
+        };
+        $scope.convertHpToInt = function(hp){
+            var num = hp.split("(")[0].trim();
+            return parseInt(num);
+        };
         $scope.getUniqueCr = function () {
             var uniqueCr = new Set();
             $scope.beasts.forEach(function (b){
