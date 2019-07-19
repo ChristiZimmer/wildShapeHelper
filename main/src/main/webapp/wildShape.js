@@ -14,7 +14,7 @@ angular.module("wildApp")
         $scope.showMaxCr = false;
         $scope.showSwimming = true;
         $scope.showFlying = true;
-        $scope.searchBeasts = '';
+        $scope.search = '';
         $scope.beastCr;
         $scope.sortMap = new Map([["name" ,false], ["cr", true], ["size", false], ["hp", true], ["ac", true], ["walkingSpeed", true],
             ["swimmingSpeed", true], ["flyingSpeed", true], ["climbingSpeed", true], ["burrow", true], ["strength", true],
@@ -27,6 +27,48 @@ angular.module("wildApp")
                 $scope.sortType = sorting;
                 $scope.sortReverse = $scope.sortMap.get(sorting);
             }
+        };
+        $scope.searchBeasts = function(beast) {
+            if($scope.search == ''){
+                return true;
+            }
+
+            if(beast["name"].toLowerCase().includes($scope.search.toLowerCase())){
+                return true;
+            }
+            if(beast["savingThrows"] != undefined && beast["savingThrows"].toLowerCase().includes($scope.search.toLowerCase())){
+                return true;
+            }
+            if(beast["skills"] != undefined && beast["skills"].toLowerCase().includes($scope.search.toLowerCase())){
+                return true;
+            }
+            if(beast["senses"] != undefined && beast["senses"].toLowerCase().includes($scope.search.toLowerCase())){
+                return true;
+            }
+            if(beast["languages"] != undefined && beast["languages"].toLowerCase().includes($scope.search.toLowerCase())){
+                return true;
+            }
+            if(beast["damageResistance"] != undefined && beast["damageResistance"].toLowerCase().includes($scope.search.toLowerCase())){
+                return true;
+            }
+            if(beast["damageImmunities"] != undefined && beast["damageImmunities"].toLowerCase().includes($scope.search.toLowerCase())){
+                return true;
+            }
+            if(beast["conditionResistance"] != undefined && beast["conditionResistance"].toLowerCase().includes($scope.search.toLowerCase())){
+                return true;
+            }
+            if(beast["conditionImmunities"] != undefined && beast["conditionImmunities"].toLowerCase().includes($scope.search.toLowerCase())){
+                return true;
+            }
+            if(beast["specialAbilities"] != undefined){
+                for(s in beast["specialAbilities"]){
+                    if(s.toLowerCase().includes($scope.search.toLowerCase())){
+                        return true;
+                    }
+                }
+            }
+
+            return false;
         };
         $scope.orderObjectBy = function(a, b) {
             if($scope.sortType == 'hp'){
