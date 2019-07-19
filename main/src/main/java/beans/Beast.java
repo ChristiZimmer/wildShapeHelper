@@ -63,7 +63,7 @@ public class Beast {
         this.intelligence = intelligence;
         this.wisdom = wisdom;
         this.charisma = charisma;
-        this.skills = savingThrows;
+        this.savingThrows = savingThrows;
         this.skills = skills;
         this.senses = senses;
         this.languages = languages;
